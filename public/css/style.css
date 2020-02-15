@@ -1,0 +1,23 @@
+/*  
+Colors for Webpage 
+LPE Navy: #536895, 
+UTA Primary Blue: #0064b1, 
+UTA Secondary Blue: #00447C, 
+UTA Orange: #f58025, 
+White: #FFFFFF
+*/
+
+/* Reset the page across all browser platforms */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Placing the font family into body so that every other elements inherits it */
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+}
