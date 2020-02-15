@@ -1,10 +1,11 @@
 /*  
 Colors for Webpage 
-LPE Navy: #536895, 
-UTA Primary Blue: #0064b1, 
-UTA Secondary Blue: #00447C, 
-UTA Orange: #f58025, 
-White: #FFFFFF
+LPE Royal Blue: #203063 | rgba(32,48,99,0.8)
+LPE Navy: #536895 | rgba(83,104,149, 0.8)
+UTA Primary Blue: #0064b1 | rgba(0,100,177,0.8)
+UTA Secondary Blue: #00447C | rgba(0,68,124,0.8)
+UTA Orange: #f58025 | rgba(245,128,37,0.8)
+White: #FFFFFF | rgba(255,255,255, 1)
 */
 
 /* Reset the page across all browser platforms */
@@ -13,11 +14,28 @@ White: #FFFFFF
     padding: 0;
     box-sizing: border-box;
 }
-/* Placing the font family into body so that every other elements inherits it */
+/* Placing the font family into body so that every other element inherits it */
 body {
+    /* Lato is font style we grabbed from Google. See line 7 & 8 for reference */
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
     color: #777;
+    padding: 30px;
+}
+
+.header {
+    height: 95vh;
+    /* Save a background header image into the folder and rename it header. Change file type below if neccessary */
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(32,48,99,0.8), 
+        rgba(0,68,124,0.8)),
+        url(../images/header.jpg);
+    background-size: cover;
+    background-position: top;
+    /* Creating a cutoff for the header to have a modern look. 
+    The four properties in polygon(x y, x y, x y, x y) are the four corners, starting at top left going clockwise */
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
