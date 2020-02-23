@@ -7,6 +7,14 @@ UTA Secondary Blue: #00447C | rgba(0,68,124,0.8)
 UTA Orange: #f58025 | rgba(245,128,37,0.8)
 White: #FFFFFF | rgba(255,255,255, 1)
 */
+:root {
+    --white: #FFFFFF;
+    --grey: #777;
+    --primary: #203063;
+    --primary-alt: #536895;
+    --secondary: #f58025;
+    --secondary-alt: #0064b1;
+}
 
 /* Reset the page across all browser platforms */
 * {
@@ -21,7 +29,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
-    color: #777;
+    color: var(--white);
     padding: 30px;
 }
 
