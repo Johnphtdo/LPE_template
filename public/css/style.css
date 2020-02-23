@@ -24,7 +24,7 @@ White: #FFFFFF | rgba(255,255,255, 1)
 }
 /* Placing the font family into body so that every other element inherits it */
 body {
-    /* Lato is font style we grabbed from Google. See line 7 & 8 for reference */
+    /* Lato is the font style we grabbed from Google. See line 7 & 8 in index.html for reference */
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 16px;
