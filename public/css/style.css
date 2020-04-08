@@ -31,15 +31,16 @@ body {
     line-height: 1.7;
     color: var(--white);
     padding: 30px;
+    background-color: var(--primary);
 }
 
 .header {
     height: 95vh;
     /* Save a background header image into the folder and rename it header. Change file type below if neccessary */
     background-image: linear-gradient(
-        to right bottom,
-        rgba(32,48,99,0.8), 
-        rgba(0,68,124,0.8)),
+        to bottom ,
+        rgba(32,48,99,0.75),
+        rgba(32,48,99,0.95)), 
         url(../img/header.jpg);
     background-size: cover;
     background-position: bottom;
@@ -60,9 +61,10 @@ body {
 }
 .text-box{
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 .heading-primary{
     color: var(--white);
@@ -85,6 +87,22 @@ body {
     letter-spacing: 7.5px;
     animation: moveInRight 1s ease-in-out;
 }
+
+/* .btn-orange{
+    background-color: var(--secondary);
+    color: var(--white);
+}
+
+.aboutBtn {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    margin-top: 1%;
+    
+} */
+
 @keyframes moveInLeft {
     0% {
         opacity: 0;
