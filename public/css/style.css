@@ -8,88 +8,86 @@ UTA Orange: #f58025 | rgba(245,128,37,0.8)
 White: #FFFFFF | rgba(255,255,255, 1)
 */
 :root {
-    --white: #FFFFFF;
-    --grey: #777;
-    --primary: #203063;
-    --primary-alt: #536895;
-    --secondary: #f58025;
-    --secondary-alt: #0064b1;
+  --white: #ffffff;
+  --grey: #777;
+  --primary: #203063;
+  --primary-alt: #536895;
+  --secondary: #f58025;
+  --secondary-alt: #0064b1;
 }
 
-html{
-    font-size: 10px;
+html {
+  font-size: 10px;
 }
 
 /* Reset the page across all browser platforms */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 /* Placing the font family into body so that every other element inherits it */
 body {
-    /* Lato is the font style we grabbed from Google. See line 7 & 8 in index.html for reference */
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    /* font-size: 16px; */
-    line-height: 1.7;
-    color: var(--white);
-    padding: 3rem;
-    background-color: var(--primary);
+  /* Lato is the font style we grabbed from Google. See line 7 & 8 in index.html for reference */
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  color: var(--white);
+  padding: 3rem;
+  background-color: var(--primary);
 }
 
 .header {
-    height: 95vh;
-    /* Save a background header image into the folder and rename it header. Change file type below if neccessary */
-    background-image: linear-gradient(
-        to bottom ,
-        rgba(32,48,99,0.3),
-        rgba(32,48,99,0.95)), 
-        url(../img/header.jpg);
-    background-size: cover;
-    background-position: bottom;
-        /* Creating a cutoff for the header to have a modern look. 
+  height: 95vh;
+  /* Save a background header image into the folder and rename it header. Change file type below if neccessary */
+  background-image: linear-gradient(
+      to bottom,
+      rgba(32, 48, 99, 0.3),
+      rgba(32, 48, 99, 0.95)
+    ),
+    url(../img/header.jpg);
+  background-size: cover;
+  background-position: bottom;
+  /* Creating a cutoff for the header to have a modern look. 
     The four properties in polygon(x y, x y, x y, x y) are the four corners, starting at top left going clockwise */
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
 }
 
 .logo-box {
-    position: absolute;
-    margin: 1%;
-    
-    
+  position: absolute;
+  margin: 1%;
 }
 .logo {
-    max-width: 15%;
-    opacity: .3;
+  max-width: 15%;
+  opacity: 0.3;
 }
-.text-box{
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+.text-box {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
-.heading-primary{
-    color: var(--white);
-    backface-visibility: hidden;
-
+.heading-primary {
+  color: var(--white);
+  backface-visibility: hidden;
 }
-.heading-primary-main{
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 1.85rem;
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
+.heading-primary-main {
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 1.85rem;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
 }
-.heading-primary-sub{
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: .75rem;
-    animation: moveInRight 1s ease-in-out;
+.heading-primary-sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.75rem;
+  animation: moveInRight 1s ease-in-out;
 }
 
 /* .btn-orange{
@@ -106,107 +104,102 @@ body {
     margin-top: 1%;
     
 } */
-.about{
-    height: 95vh;
-    background-image: linear-gradient(
-        to bottom ,
-        rgba(32,48,99,0.3),
-        rgba(32,48,99,0.95)), 
-        url(../img/about.jpg);
-    background-size: cover;
-    background-position: bottom;
-    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-
+.about {
+  height: 95vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(32, 48, 99, 0.3),
+      rgba(32, 48, 99, 0.95)
+    ),
+    url(../img/about.jpg);
+  background-size: cover;
+  background-position: bottom;
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
 }
 .about-text-box {
-    display: block;
-    padding: 15rem;    
-    text-align: center;
+  display: block;
+  padding: 15rem;
+  text-align: center;
 }
-.section-heading{
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1%;
-}
-
-.about-description{
-    font-size: 1.5rem;
-    text-indent: 1rem;
-    width: 80%;
-    margin: 1rem auto;
+.section-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1%;
 }
 
+.about-description {
+  font-size: 1.5rem;
+  text-indent: 1rem;
+  width: 80%;
+  margin: 1rem auto;
+}
 
 
-
+/* Animations for Header */
 @keyframes moveInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-100px)
-
-
-    }
-    80% {
-        transform: translateX(10px)
-
-    }
-    100% {
-        opacity: 1;
-        transform: translate(0)
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 @keyframes moveInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(100px)
-
-
-    }
-    80% {
-        transform: translateX(-10px)
-
-    }
-    100% {
-        opacity: 1;
-        transform: translate(0)
-    }
-}
-@media (max-width: 1300px){
-    html{
-        font-size: 8.5px;
-    }
-}
-@media(max-width: 980px){
-    html {
-        font-size: 8px;
-    }
-    .logo {
-        max-width: 10%;
-    }
-}
-@media(max-width: 810px){
-    html {
-        font-size: 7px;
-    }
-}
-@media(max-width: 650px){
-    html {
-        font-size: 6px;
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
-@media(max-width: 530px){
-    html {
-        font-size: 5px;
-    }
+/* Website Responsiveness */
+@media (max-width: 1300px) {
+  html {
+    font-size: 8.5px;
+  }
 }
-@media(max-width: 370px){
-    html {
-        font-size: 4.5px;
-    }
+@media (max-width: 980px) {
+  html {
+    font-size: 8px;
+  }
+  .logo {
+    max-width: 10%;
+  }
 }
-@media(max-width: 325px){
-    html {
-        font-size: 4px;
-    }
+@media (max-width: 810px) {
+  html {
+    font-size: 7px;
+  }
+}
+@media (max-width: 650px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 530px) {
+  html {
+    font-size: 5px;
+  }
+}
+@media (max-width: 370px) {
+  html {
+    font-size: 4.5px;
+  }
+}
+@media (max-width: 325px) {
+  html {
+    font-size: 4px;
+  }
 }
