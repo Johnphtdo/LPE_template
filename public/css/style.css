@@ -120,8 +120,8 @@ body {
 
 .about-text-box{
     text-align: center;
-    background-color: red;
-    
+    padding: 35rem 10rem;
+    font-size: 2rem;
 }
 
 @keyframes moveInLeft {
