@@ -118,7 +118,7 @@ body {
 }
 .about-text-box {
   display: block;
-  padding: 15rem;
+  padding: 15rem 0;
   text-align: center;
 }
 .section-heading {
@@ -164,11 +164,11 @@ body {
 }
 
 /* Website Responsiveness */
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
   html {
     font-size: 8.5px;
-  }
-}
+  } 
+ }
 @media (max-width: 980px) {
   html {
     font-size: 8px;
@@ -179,27 +179,23 @@ body {
 }
 @media (max-width: 810px) {
   html {
-    font-size: 7px;
+    font-size: 7.5px;
   }
 }
 @media (max-width: 650px) {
   html {
-    font-size: 6px;
+    font-size: 7px;
   }
 }
 
 @media (max-width: 530px) {
   html {
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 330px) {
+  html {
     font-size: 5px;
-  }
-}
-@media (max-width: 370px) {
-  html {
-    font-size: 4.5px;
-  }
-}
-@media (max-width: 325px) {
-  html {
-    font-size: 4px;
   }
 }
