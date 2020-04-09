@@ -115,11 +115,12 @@ body {
         url(../img/about.jpg);
     background-size: cover;
     background-position: bottom;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
 
 }
 .about-text-box {
     display: block;
-    padding: 10rem;    
+    padding: 15rem;    
     text-align: center;
 }
 .section-heading{
@@ -130,9 +131,9 @@ body {
 
 .about-description{
     font-size: 1.5rem;
-    text-indent: 5rem;
+    text-indent: 1rem;
     width: 80%;
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 
 
@@ -170,13 +171,42 @@ body {
         transform: translate(0)
     }
 }
+@media (max-width: 1300px){
+    html{
+        font-size: 8.5px;
+    }
+}
+@media(max-width: 980px){
+    html {
+        font-size: 8px;
+    }
+    .logo {
+        max-width: 10%;
+    }
+}
+@media(max-width: 810px){
+    html {
+        font-size: 7px;
+    }
+}
+@media(max-width: 650px){
+    html {
+        font-size: 6px;
+    }
+}
 
-/* @media(max-width: 980px){
-    .header {
-        width: 70%;
-        
+@media(max-width: 530px){
+    html {
+        font-size: 5px;
     }
-    .main{
-        width: 70%;
+}
+@media(max-width: 370px){
+    html {
+        font-size: 4.5px;
     }
-} */
+}
+@media(max-width: 325px){
+    html {
+        font-size: 4px;
+    }
+}
