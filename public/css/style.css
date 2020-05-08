@@ -104,7 +104,9 @@ body {
     margin-top: 1%;
     
 } */
+
 .about {
+  position: relative;
   height: 95vh;
   background-image: linear-gradient(
       to bottom,
@@ -118,7 +120,10 @@ body {
 }
 .about-text-box {
   display: block;
-  padding: 15rem 0;
+  height: 70%;
+  position: absolute;
+  margin-top: 10rem;
+  padding: 5rem 0;
   text-align: center;
 }
 .section-heading {
@@ -130,8 +135,8 @@ body {
 .about-description {
   font-size: 1.5rem;
   text-indent: 1rem;
-  width: 80%;
-  margin: 1rem auto;
+  width: 90%;
+  margin: 2rem auto;
 }
 
 
@@ -188,7 +193,7 @@ body {
   }
 }
 
-@media (max-width: 530px) {
+@media (max-width: 450px) {
   html {
     font-size: 6px;
   }
@@ -196,6 +201,6 @@ body {
 
 @media (max-width: 330px) {
   html {
-    font-size: 5px;
+    font-size: 5.5px;
   }
 }
