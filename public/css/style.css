@@ -73,7 +73,7 @@ body {
   animation: moveInRight 1s ease-in-out; }
 
 /* .btn-orange{
-      background-color: var(--secondary);
+      background-color: $color-secondary;
       color: $color-white;
   }
   

@@ -4,7 +4,8 @@
   "description": "Landing page for UTA Lambda Phi Epislon Beta Beta Chapter",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass public/sass/main.scss public/css/style.css"
+    "compile:sass": "node-sass public/sass/main.scss public/css/style.css -w",
+    "watch:sass": "nodemon -e scss -x \"npm run compile:sass\""
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/Johnphtdo/LPE_template#readme",
   "devDependencies": {
-    "node-sass": "^4.14.1"
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4"
   }
 }
