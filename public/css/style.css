@@ -52,22 +52,20 @@ body {
 .heading-primary {
   color: #ffffff;
   backface-visibility: hidden; }
-
-.heading-primary-main {
-  display: block;
-  font-size: 6rem;
-  font-weight: 400;
-  letter-spacing: 1.85rem;
-  animation-name: moveInLeft;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out; }
-
-.heading-primary-sub {
-  display: block;
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 0.75rem;
-  animation: moveInRight 1s ease-in-out; }
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 1.85rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.75rem;
+    animation: moveInRight 1s ease-in-out; }
 
 /* .btn-orange{
       background-color: $color-secondary;
@@ -90,25 +88,22 @@ body {
   background-size: cover;
   background-position: bottom;
   clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%); }
-
-.about-text-box {
-  display: block;
-  height: 70%;
-  position: absolute;
-  margin-top: 10rem;
-  padding: 5rem 0;
-  text-align: center; }
-
-.section-heading {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 1%; }
-
-.about-description {
-  font-size: 1.5rem;
-  text-indent: 1rem;
-  width: 90%;
-  margin: 2rem auto; }
+  .about__text-box {
+    display: block;
+    height: 70%;
+    position: absolute;
+    margin-top: 10rem;
+    padding: 5rem 0;
+    text-align: center; }
+  .about__heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1%; }
+  .about__description {
+    font-size: 1.5rem;
+    text-indent: 1rem;
+    width: 90%;
+    margin: 2rem auto; }
 
 /* Animations for Header */
 @keyframes moveInLeft {

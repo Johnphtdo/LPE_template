@@ -7,6 +7,9 @@ UTA Secondary Blue: #00447C | rgba(0,68,124,0.8)
 UTA Orange: #f58025 | rgba(245,128,37,0.8)
 White: #FFFFFF | rgba(255,255,255, 1)
 */
+
+@import "base/base";
+
 $color-white: #ffffff;
 $color-grey: #777;
 $color-primary: #203063;
@@ -74,23 +77,25 @@ $color-secondary: #f58025;
   .heading-primary {
     color: $color-white;
     backface-visibility: hidden;
+
+    &--main {
+      display: block;
+      font-size: 6rem;
+      font-weight: 400;
+      letter-spacing: 1.85rem;
+      animation-name: moveInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-in-out;
+    }
+    &--sub {
+      display: block;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 0.75rem;
+      animation: moveInRight 1s ease-in-out;
+    }
   }
-  .heading-primary-main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 1.85rem;
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-  }
-  .heading-primary-sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 0.75rem;
-    animation: moveInRight 1s ease-in-out;
-  }
+  
   
   /* .btn-orange{
       background-color: $color-secondary;
@@ -119,28 +124,28 @@ $color-secondary: #f58025;
     background-size: cover;
     background-position: bottom;
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+
+    &__text-box {
+      display: block;
+      height: 70%;
+      position: absolute;
+      margin-top: 10rem;
+      padding: 5rem 0;
+      text-align: center;
+    }
+    &__heading {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1%;
+    }
+    
+    &__description {
+      font-size: 1.5rem;
+      text-indent: 1rem;
+      width: 90%;
+      margin: 2rem auto;
+    }
   }
-  .about-text-box {
-    display: block;
-    height: 70%;
-    position: absolute;
-    margin-top: 10rem;
-    padding: 5rem 0;
-    text-align: center;
-  }
-  .section-heading {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1%;
-  }
-  
-  .about-description {
-    font-size: 1.5rem;
-    text-indent: 1rem;
-    width: 90%;
-    margin: 2rem auto;
-  }
-  
   
   /* Animations for Header */
   @keyframes moveInLeft {
