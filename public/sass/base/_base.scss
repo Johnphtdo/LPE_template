@@ -1,0 +1,14 @@
+/* Reset the page across all browser platforms */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* This defines what our base size is, which is 1rem (root element font size) */
+html {
+    font-size: 62.5%;
+}
+  

@@ -1,0 +1,33 @@
+.header {
+    height: 95vh;
+    /* Save a background header image into the folder and rename it header. Change file type below if neccessary */
+    background-image: linear-gradient(
+        to bottom,
+        rgba($color-primary, 0.3),
+        rgba($color-primary, 0.95)
+      ),
+      url(../img/header.jpg);
+    background-size: cover;
+    background-position: bottom;
+    /* Creating a cutoff for the header to have a modern look. 
+      The four properties in polygon(x y, x y, x y, x y) are the four corners, starting at top left going clockwise */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+    
+    &__logo-box {
+      position: absolute;
+      margin: 1%;
+    }
+
+    &__logo {
+      max-width: 15%;
+      opacity: 0.3;
+    }
+
+    &__text-box {
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  }

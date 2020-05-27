@@ -7,14 +7,38 @@ UTA Secondary Blue: #00447C | rgba(0,68,124,0.8)
 UTA Orange: #f58025 | rgba(245,128,37,0.8)
 White: #FFFFFF | rgba(255,255,255, 1)
 */
-html {
-  font-size: 62.5%; }
+/* Animations for Header */
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  80% {
+    transform: translateX(10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  80% {
+    transform: translateX(-10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
 
 /* Reset the page across all browser platforms */
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+/* This defines what our base size is, which is 1rem (root element font size) */
+html {
+  font-size: 62.5%; }
 
 /* Placing the font family into body so that every other element inherits it */
 body {
@@ -26,28 +50,6 @@ body {
   color: #ffffff;
   padding: 3rem;
   background-color: #203063; }
-
-.header {
-  height: 95vh;
-  /* Save a background header image into the folder and rename it header. Change file type below if neccessary */
-  background-image: linear-gradient(to bottom, rgba(32, 48, 99, 0.3), rgba(32, 48, 99, 0.95)), url(../img/header.jpg);
-  background-size: cover;
-  background-position: bottom;
-  /* Creating a cutoff for the header to have a modern look. 
-      The four properties in polygon(x y, x y, x y, x y) are the four corners, starting at top left going clockwise */
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); }
-  .header__logo-box {
-    position: absolute;
-    margin: 1%; }
-  .header__logo {
-    max-width: 15%;
-    opacity: 0.3; }
-  .header__text-box {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
 
 .heading-primary {
   color: #ffffff;
@@ -81,6 +83,28 @@ body {
       margin-top: 1%;
       
   } */
+.header {
+  height: 95vh;
+  /* Save a background header image into the folder and rename it header. Change file type below if neccessary */
+  background-image: linear-gradient(to bottom, rgba(32, 48, 99, 0.3), rgba(32, 48, 99, 0.95)), url(../img/header.jpg);
+  background-size: cover;
+  background-position: bottom;
+  /* Creating a cutoff for the header to have a modern look. 
+      The four properties in polygon(x y, x y, x y, x y) are the four corners, starting at top left going clockwise */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); }
+  .header__logo-box {
+    position: absolute;
+    margin: 1%; }
+  .header__logo {
+    max-width: 15%;
+    opacity: 0.3; }
+  .header__text-box {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+
 .about {
   position: relative;
   height: 95vh;
@@ -104,27 +128,6 @@ body {
     text-indent: 1rem;
     width: 90%;
     margin: 2rem auto; }
-
-/* Animations for Header */
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-100px); }
-  80% {
-    transform: translateX(10px); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(100px); }
-  80% {
-    transform: translateX(-10px); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
 
 /* Website Responsiveness */
 @media (max-width: 1200px) {

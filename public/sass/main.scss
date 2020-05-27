@@ -1,118 +1,20 @@
-/*  
-Colors for Webpage 
-LPE Royal Blue: #203063 | rgba(32,48,99,0.8)
-LPE Navy: #536895 | rgba(83,104,149, 0.8)
-UTA Primary Blue: #0064b1 | rgba(0,100,177,0.8)
-UTA Secondary Blue: #00447C | rgba(0,68,124,0.8)
-UTA Orange: #f58025 | rgba(245,128,37,0.8)
-White: #FFFFFF | rgba(255,255,255, 1)
-*/
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
 
+@import "base/animation";
 @import "base/base";
+@import "base/typography";
+@import "base/utilities";
 
-$color-white: #ffffff;
-$color-grey: #777;
-$color-primary: #203063;
-$color-primary-light: #536895;
-$color-secondary: #f58025;
+@import "components/button";
 
-  
-  html {
-    font-size: 62.5%;
-  }
-  
-  /* Reset the page across all browser platforms */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  /* Placing the font family into body so that every other element inherits it */
-  body {
-    /* Lato is the font style we grabbed from Google. See line 7 & 8 in index.html for reference */
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    /* font-size: 16px; */
-    line-height: 1.7;
-    color: $color-white;
-    padding: 3rem;
-    background-color: $color-primary;
-  }
-  
-  .header {
-    height: 95vh;
-    /* Save a background header image into the folder and rename it header. Change file type below if neccessary */
-    background-image: linear-gradient(
-        to bottom,
-        rgba($color-primary, 0.3),
-        rgba($color-primary, 0.95)
-      ),
-      url(../img/header.jpg);
-    background-size: cover;
-    background-position: bottom;
-    /* Creating a cutoff for the header to have a modern look. 
-      The four properties in polygon(x y, x y, x y, x y) are the four corners, starting at top left going clockwise */
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
-    
-    &__logo-box {
-      position: absolute;
-      margin: 1%;
-    }
+@import "layout/header";
 
-    &__logo {
-      max-width: 15%;
-      opacity: 0.3;
-    }
+@import "pages/home";
 
-    &__text-box {
-      position: absolute;
-      top: 55%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
-  }
-  
- 
-  .heading-primary {
-    color: $color-white;
-    backface-visibility: hidden;
 
-    &--main {
-      display: block;
-      font-size: 6rem;
-      font-weight: 400;
-      letter-spacing: 1.85rem;
-      animation-name: moveInLeft;
-      animation-duration: 1s;
-      animation-timing-function: ease-in-out;
-    }
-    &--sub {
-      display: block;
-      font-size: 2rem;
-      font-weight: 700;
-      letter-spacing: 0.75rem;
-      animation: moveInRight 1s ease-in-out;
-    }
-  }
-  
-  
-  /* .btn-orange{
-      background-color: $color-secondary;
-      color: $color-white;
-  }
-  
-  .aboutBtn {
-      text-transform: uppercase;
-      text-decoration: none;
-      padding: 15px 40px;
-      display: inline-block;
-      border-radius: 100px;
-      margin-top: 1%;
-      
-  } */
-  
-  .about {
+.about {
     position: relative;
     height: 95vh;
     background-image: linear-gradient(
@@ -146,35 +48,7 @@ $color-secondary: #f58025;
       margin: 2rem auto;
     }
   }
-  
-  /* Animations for Header */
-  @keyframes moveInLeft {
-    0% {
-      opacity: 0;
-      transform: translateX(-100px);
-    }
-    80% {
-      transform: translateX(10px);
-    }
-    100% {
-      opacity: 1;
-      transform: translate(0);
-    }
-  }
-  @keyframes moveInRight {
-    0% {
-      opacity: 0;
-      transform: translateX(100px);
-    }
-    80% {
-      transform: translateX(-10px);
-    }
-    100% {
-      opacity: 1;
-      transform: translate(0);
-    }
-  }
-  
+
   /* Website Responsiveness */
   @media (max-width: 1200px) {
     html {
