@@ -1,0 +1,28 @@
+{
+  "name": "lpe_template",
+  "version": "1.0.0",
+  "description": "Landing page for UTA Lambda Phi Epislon Beta Beta Chapter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Johnphtdo/LPE_template.git"
+  },
+  "keywords": [
+    "Lambda",
+    "Phi",
+    "Epsilon",
+    "Fraternity"
+  ],
+  "author": "John Do (Johnphtdo)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Johnphtdo/LPE_template/issues"
+  },
+  "homepage": "https://github.com/Johnphtdo/LPE_template#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
