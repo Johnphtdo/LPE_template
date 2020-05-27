@@ -7,25 +7,15 @@ UTA Secondary Blue: #00447C | rgba(0,68,124,0.8)
 UTA Orange: #f58025 | rgba(245,128,37,0.8)
 White: #FFFFFF | rgba(255,255,255, 1)
 */
-:root {
-  --white: #ffffff;
-  --grey: #777;
-  --primary: #203063;
-  --primary-alt: #536895;
-  --secondary: #f58025;
-  --secondary-alt: #0064b1;
-}
-
 html {
-  font-size: 62.5%;
-}
+  font-size: 62.5%; }
 
 /* Reset the page across all browser platforms */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
+
 /* Placing the font family into body so that every other element inherits it */
 body {
   /* Lato is the font style we grabbed from Google. See line 7 & 8 in index.html for reference */
@@ -33,46 +23,39 @@ body {
   font-weight: 400;
   /* font-size: 16px; */
   line-height: 1.7;
-  color: var(--white);
+  color: #ffffff;
   padding: 3rem;
-  background-color: var(--primary);
-}
+  background-color: #203063; }
 
 .header {
   height: 95vh;
   /* Save a background header image into the folder and rename it header. Change file type below if neccessary */
-  background-image: linear-gradient(
-      to bottom,
-      rgba(32, 48, 99, 0.3),
-      rgba(32, 48, 99, 0.95)
-    ),
-    url(../img/header.jpg);
+  background-image: linear-gradient(to bottom, rgba(32, 48, 99, 0.3), rgba(32, 48, 99, 0.95)), url(../img/header.jpg);
   background-size: cover;
   background-position: bottom;
   /* Creating a cutoff for the header to have a modern look. 
-    The four properties in polygon(x y, x y, x y, x y) are the four corners, starting at top left going clockwise */
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
-}
+      The four properties in polygon(x y, x y, x y, x y) are the four corners, starting at top left going clockwise */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); }
 
 .logo-box {
   position: absolute;
-  margin: 1%;
-}
+  margin: 1%; }
+
 .logo {
   max-width: 15%;
-  opacity: 0.3;
-}
+  opacity: 0.3; }
+
 .text-box {
   position: absolute;
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
-}
+  text-align: center; }
+
 .heading-primary {
-  color: var(--white);
-  backface-visibility: hidden;
-}
+  color: #ffffff;
+  backface-visibility: hidden; }
+
 .heading-primary-main {
   display: block;
   font-size: 6rem;
@@ -80,127 +63,100 @@ body {
   letter-spacing: 1.85rem;
   animation-name: moveInLeft;
   animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-}
+  animation-timing-function: ease-in-out; }
+
 .heading-primary-sub {
   display: block;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.75rem;
-  animation: moveInRight 1s ease-in-out;
-}
+  animation: moveInRight 1s ease-in-out; }
 
 /* .btn-orange{
-    background-color: var(--secondary);
-    color: var(--white);
-}
-
-.aboutBtn {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 15px 40px;
-    display: inline-block;
-    border-radius: 100px;
-    margin-top: 1%;
-    
-} */
-
+      background-color: var(--secondary);
+      color: $color-white;
+  }
+  
+  .aboutBtn {
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 15px 40px;
+      display: inline-block;
+      border-radius: 100px;
+      margin-top: 1%;
+      
+  } */
 .about {
   position: relative;
   height: 95vh;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(32, 48, 99, 0.3),
-      rgba(32, 48, 99, 0.95)
-    ),
-    url(../img/about.jpg);
+  background-image: linear-gradient(to bottom, rgba(32, 48, 99, 0.3), rgba(32, 48, 99, 0.95)), url(../img/about.jpg);
   background-size: cover;
   background-position: bottom;
-  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-}
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%); }
+
 .about-text-box {
   display: block;
   height: 70%;
   position: absolute;
   margin-top: 10rem;
   padding: 5rem 0;
-  text-align: center;
-}
+  text-align: center; }
+
 .section-heading {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 1%;
-}
+  margin-bottom: 1%; }
 
 .about-description {
   font-size: 1.5rem;
   text-indent: 1rem;
   width: 90%;
-  margin: 2rem auto;
-}
-
+  margin: 2rem auto; }
 
 /* Animations for Header */
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
-  }
+    transform: translateX(-100px); }
   80% {
-    transform: translateX(10px);
-  }
+    transform: translateX(10px); }
   100% {
     opacity: 1;
-    transform: translate(0);
-  }
-}
+    transform: translate(0); } }
+
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(100px);
-  }
+    transform: translateX(100px); }
   80% {
-    transform: translateX(-10px);
-  }
+    transform: translateX(-10px); }
   100% {
     opacity: 1;
-    transform: translate(0);
-  }
-}
+    transform: translate(0); } }
 
 /* Website Responsiveness */
 @media (max-width: 1200px) {
   html {
-    font-size: 8.5px;
-  } 
- }
+    font-size: 8.5px; } }
+
 @media (max-width: 980px) {
   html {
-    font-size: 8px;
-  }
+    font-size: 8px; }
   .logo {
-    max-width: 10%;
-  }
-}
+    max-width: 10%; } }
+
 @media (max-width: 810px) {
   html {
-    font-size: 7.5px;
-  }
-}
+    font-size: 7.5px; } }
+
 @media (max-width: 650px) {
   html {
-    font-size: 7px;
-  }
-}
+    font-size: 7px; } }
 
 @media (max-width: 450px) {
   html {
-    font-size: 6px;
-  }
-}
+    font-size: 6px; } }
 
 @media (max-width: 330px) {
   html {
-    font-size: 5.5px;
-  }
-}
+    font-size: 5.5px; } }
