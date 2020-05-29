@@ -4,7 +4,7 @@
   "description": "Landing page for UTA Lambda Phi Epislon Beta Beta Chapter",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass public/sass/main.scss public/css/style.css -w",
+    "compile:sass": "node-sass public/sass/main.scss public/css/style.css",
     "watch:sass": "nodemon -e scss -x \"npm run compile:sass\""
   },
   "repository": {
