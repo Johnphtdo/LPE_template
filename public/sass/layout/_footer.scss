@@ -23,14 +23,15 @@
     &__list{
         list-style: none;
     }
+
     &__item{
         display: inline-block;
 
         &:not(:last-child){
             margin-right: 1.5rem;
         }
-
     }
+
     &__link{
         &:link,
         &:visited{
@@ -46,10 +47,12 @@
         }
 
     }
+
     &__copyright{
         border-top: 1px solid $color-black;
         padding-top: 2rem;
         float: right;
     }
+    
     }
 
