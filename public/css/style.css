@@ -39,6 +39,15 @@ White: #FFFFFF | rgba(255,255,255, 1)
 /* This defines what our base size is, which is 1rem (root element font size) */
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 /* Placing the font family into body so that every other element inherits it */
 body {
@@ -50,6 +59,9 @@ body {
   color: #ffffff;
   padding: 1rem;
   background-color: #203063; }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 .heading-primary {
   color: #ffffff;
@@ -387,7 +399,7 @@ body {
   .brother-box__list {
     margin-top: 1rem;
     border-top: 1px solid #000000;
-    font-size: 1.5rem;
+    font-size: 2rem;
     list-style: none; }
   .brother-box__item:not(:last-child) {
     margin-bottom: .5rem; }
@@ -395,28 +407,3 @@ body {
     font-size: 3rem; }
 
 /* Website Responsiveness */
-@media (max-width: 1200px) {
-  html {
-    font-size: 8.5px; } }
-
-@media (max-width: 980px) {
-  html {
-    font-size: 8px; }
-  .logo {
-    max-width: 10%; } }
-
-@media (max-width: 810px) {
-  html {
-    font-size: 7.5px; } }
-
-@media (max-width: 650px) {
-  html {
-    font-size: 7px; } }
-
-@media (max-width: 450px) {
-  html {
-    font-size: 6px; } }
-
-@media (max-width: 330px) {
-  html {
-    font-size: 5.5px; } }

@@ -8,6 +8,9 @@
     color: $color-white;
     padding: 1rem;
     background-color: $color-primary;
+    @include respond(tab-port) {
+      padding: 0;
+  }
 }
 
 .heading-primary {
