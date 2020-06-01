@@ -13,7 +13,9 @@
      right: 6rem;
      border-radius: 50%;
      z-index: 20;
-
+     box-shadow: 0 1rem 3rem rgba($color-black, .1);
+     text-align: center;
+     cursor: pointer;
 
  }
 
@@ -24,19 +26,20 @@
     position: fixed;
     top: 6.5rem;
     right: 6.5rem;
-    background-image: radial-gradient($color-primary-light, $color-primary);
+    background-image: radial-gradient($color-primary, $color-primary-light);
     z-index: 10;
-
-    transform: scale(80);
+    transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1);
  }
 
  &__nav{
      height: 100vh;
-     width: 100%;
+     width: 0;
+     opacity: 0;
      position: fixed;
      top: 0;
      right: 0;
      z-index: 15;
+     transition: all .4s
  }
 
  &__list{
@@ -62,7 +65,7 @@
         text-decoration: none;
         text-transform: uppercase;
         background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
-        background-size: 230%;
+        background-size: 240%;
         transition: all .4s;
  }
     &:hover,
@@ -72,5 +75,65 @@
  }
 
 }
+&__checkbox:checked ~ &__background{
+        transform: scale(80);
 
+}
+&__checkbox:checked ~ &__nav{
+        opacity: 1;
+        width: 100%;
+
+}
+&__icon{
+    margin-top: 3.5rem;
+    position: relative;
+
+    &,
+    &::before,
+    &::after {
+        width: 3rem;
+        height: 2px;
+        background-color: $color-black;
+        display: inline-block;
+    }
+    
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        transition: all .2s;
+    }
+    &::before {top: -.8rem;}
+    &::after {top: .8rem;}
+
+}
+
+&__button:hover &__icon::before{
+
+    top: -1rem;
+
+}
+&__button:hover &__icon::after{
+
+    top: 1rem;
+
+}
+&__checkbox:checked + &__button &__icon{
+
+    background-color: transparent;
+
+} 
+&__checkbox:checked + &__button &__icon::before{
+
+    top: 0;
+    transform: rotate(135deg);
+
+} 
+&__checkbox:checked + &__button &__icon::after{
+
+    top:0;
+    transform: rotate(-135deg)
+
+} 
 }
