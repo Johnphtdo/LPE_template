@@ -234,7 +234,8 @@ body {
   top: 0;
   right: 0;
   z-index: 15;
-  transition: all .4s; }
+  transition: all .4s;
+  visibility: hidden; }
 
 .navigation__list {
   position: absolute;
@@ -268,7 +269,8 @@ body {
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
-  width: 100%; }
+  width: 100%;
+  visibility: visible; }
 
 .navigation__icon {
   margin-top: 3.5rem;

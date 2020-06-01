@@ -39,7 +39,8 @@
      top: 0;
      right: 0;
      z-index: 15;
-     transition: all .4s
+     transition: all .4s;
+     visibility: hidden;
  }
 
  &__list{
@@ -82,6 +83,7 @@
 &__checkbox:checked ~ &__nav{
         opacity: 1;
         width: 100%;
+        visibility: visible;
 
 }
 &__icon{
