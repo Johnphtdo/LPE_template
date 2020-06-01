@@ -112,6 +112,9 @@ body {
   padding: 1rem 0;
   font-size: 1.4rem;
   color: #ffffff; }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      padding: 8rem 0; } }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 5rem; }
@@ -122,6 +125,10 @@ body {
     border-top: 1px solid #000000;
     padding-top: 2rem;
     display: inline-block; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__navigation {
+        width: 100%;
+        text-align: center; } }
   .footer__list {
     list-style: none; }
   .footer__item {
@@ -139,12 +146,19 @@ body {
     border-top: 1px solid #000000;
     padding-top: 2rem;
     float: right; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__copyright {
+        width: 100%;
+        text-align: center; } }
 
 .row {
   max-width: 114rem;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
+    @media only screen and (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
   .row::after {
     content: "";
     display: table;
@@ -153,6 +167,13 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+      @media only screen and (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
@@ -339,7 +360,6 @@ body {
   margin: 5vh 0; }
 
 .brother-box {
-  height: 50vh;
   background-color: rgba(245, 128, 37, 0.8);
   text-align: center;
   padding: 2.5rem; }
@@ -367,9 +387,7 @@ body {
   html {
     font-size: 8px; }
   .logo {
-    max-width: 10%; }
-  .footer {
-    padding: 1rem 1rem; } }
+    max-width: 10%; } }
 
 @media (max-width: 810px) {
   html {
