@@ -28,3 +28,21 @@
 
   }
 
+  .event-box {
+    background-color: rgba($color-secondary, 0.8);
+    text-align: center;
+    padding: 2.5rem;
+  
+    &__heading{
+      font-size: 2rem;
+    }
+    &__text{
+      font-size: 1.5rem;
+      text-indent: 1rem;
+    }
+    &__img{
+      max-width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+  
