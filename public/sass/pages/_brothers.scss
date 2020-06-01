@@ -4,13 +4,13 @@
 }
 
 .brother-box {
-    height: 50rem;
+    height: 50vh;
     background-color: rgba($color-secondary, 0.8);
     text-align: center;
     padding: 2.5rem;
   
     &__heading{
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
     &__img{
       max-width: 100%;

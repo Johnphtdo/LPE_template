@@ -337,12 +337,12 @@ body {
   margin: 5vh 0; }
 
 .brother-box {
-  height: 50rem;
+  height: 50vh;
   background-color: rgba(245, 128, 37, 0.8);
   text-align: center;
   padding: 2.5rem; }
   .brother-box__heading {
-    font-size: 2.5rem; }
+    font-size: 2rem; }
   .brother-box__img {
     max-width: 100%;
     margin-bottom: 1rem; }
@@ -367,7 +367,7 @@ body {
   .logo {
     max-width: 10%; }
   .footer {
-    padding: 2rem; } }
+    padding: 1rem 1rem; } }
 
 @media (max-width: 810px) {
   html {
