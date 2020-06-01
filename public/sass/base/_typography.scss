@@ -6,7 +6,7 @@
     /* font-size: 16px; */
     line-height: 1.7;
     color: $color-white;
-    padding: 3rem;
+    padding: 0;
     background-color: $color-primary;
 }
 
@@ -34,11 +34,19 @@
   
 .heading-secondary {
       
-      font-size: 4rem;
-      font-weight: 700;
-      margin-bottom: 1%;
-      display: inline-block;
-
+  margin-bottom: 1%;
+  display: inline-block;
+  
+  &--main{
+    font-weight: 400;
+        font-size: 4rem;
+        display:block;
+      }
+      &--sub{
+        font-weight: 700;
+        font-size: 2rem;
+        display:block;
+      }
 }
 
 #about-history{

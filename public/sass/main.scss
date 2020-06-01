@@ -9,10 +9,13 @@
 
 @import "components/button";
 
-@import "layout/header";
+@import "layout/footer";
 @import "layout/grid";
+@import "layout/header";
+
 
 @import "pages/home";
+
 
   /* Website Responsiveness */
   @media (max-width: 1200px) {
