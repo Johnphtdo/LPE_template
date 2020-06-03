@@ -105,20 +105,19 @@ body {
 .u-margin-bottom-4 {
   margin-bottom: 4rem; }
 
-/* .btn-orange{
-      background-color: $color-secondary;
-      color: $color-white;
-  }
-  
-  .aboutBtn {
-      text-transform: uppercase;
-      text-decoration: none;
-      padding: 15px 40px;
-      display: inline-block;
-      border-radius: 100px;
-      margin-top: 1%;
-      
-  } */
+.btn-orange {
+  background-color: #f58025;
+  color: #ffffff; }
+
+.classBtn {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  margin-top: 1%;
+  font-size: 1.4rem; }
+
 .footer {
   background-color: #f58025;
   padding: 1rem 0;
@@ -386,6 +385,25 @@ body {
 .section-brothers {
   padding: 5rem 0;
   margin: 5vh 0; }
+
+.section-classes {
+  padding: 5rem 0;
+  margin: 5vh 0; }
+
+.classes__navigation {
+  text-align: center; }
+  @media only screen and (max-width: 56.25em) {
+    .classes__navigation {
+      width: 100%;
+      text-align: center; } }
+
+.classes__list {
+  list-style: none; }
+
+.classes__item {
+  display: inline-block; }
+  .classes__item:not(:last-child) {
+    margin-right: 1.5rem; }
 
 .brother-box {
   background-color: rgba(245, 128, 37, 0.8);

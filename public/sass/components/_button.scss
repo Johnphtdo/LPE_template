@@ -1,14 +1,15 @@
-  /* .btn-orange{
+ .btn-orange{
       background-color: $color-secondary;
       color: $color-white;
   }
   
-  .aboutBtn {
+  .classBtn {
       text-transform: uppercase;
       text-decoration: none;
-      padding: 15px 40px;
+      padding: 1.5rem 4rem;
       display: inline-block;
-      border-radius: 100px;
+      border-radius: 10rem;
       margin-top: 1%;
-      
-  } */
+      font-size: 1.4rem;
+      cursor: pointer;
+  }
