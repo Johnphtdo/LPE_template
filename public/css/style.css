@@ -116,7 +116,8 @@ body {
   display: inline-block;
   border-radius: 10rem;
   margin-top: 1%;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  cursor: pointer; }
 
 .footer {
   background-color: #f58025;
@@ -413,7 +414,8 @@ body {
     font-size: 2rem; }
   .brother-box__img {
     max-width: 100%;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    border-radius: 50%; }
   .brother-box__list {
     margin-top: 1rem;
     border-top: 1px solid #000000;

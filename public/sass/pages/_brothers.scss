@@ -11,7 +11,7 @@
 
 &__navigation{
   text-align: center;
-  
+
   @include respond(tab-port) {
     width: 100%;
     text-align: center;
@@ -43,6 +43,7 @@
     &__img{
       max-width: 100%;
       margin-bottom: 1rem;
+      border-radius: 50%;
     }
     &__list{
         margin-top: 1rem;
