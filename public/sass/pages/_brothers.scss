@@ -28,14 +28,13 @@
     
     &:not(:last-child){
       margin-right: 1.5rem;
+      margin-bottom: .5rem;
     }
   }
 }
 
 .brother-box {
-    background-color: rgba($color-secondary, 0.8);
-    text-align: center;
-    padding: 2.5rem;
+    @include card;
   
     &__heading{
       font-size: $default-font-size;

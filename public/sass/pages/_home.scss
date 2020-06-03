@@ -29,10 +29,8 @@
   }
 
   .event-box {
-    background-color: rgba($color-secondary, 0.8);
-    text-align: center;
-    padding: 2.5rem;
-  
+    @include card;
+
     &__heading{
       font-size: $default-font-size;
     }
