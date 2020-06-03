@@ -9,7 +9,7 @@
     padding: 2.5rem;
   
     &__heading{
-      font-size: 2rem;
+      font-size: $default-font-size;
     }
     &__img{
       max-width: 100%;
@@ -18,7 +18,7 @@
     &__list{
         margin-top: 1rem;
         border-top: 1px solid $color-black;
-        font-size: 2rem;
+        font-size: $default-font-size;
         list-style: none;
     }
     &__item{

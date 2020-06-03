@@ -34,10 +34,10 @@
     padding: 2.5rem;
   
     &__heading{
-      font-size: 2rem;
+      font-size: $default-font-size;
     }
     &__text{
-      font-size: 1.5rem;
+      font-size: $default-font-size;
       text-indent: 1rem;
     }
     &__img{
