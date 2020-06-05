@@ -434,7 +434,10 @@ body {
   margin: 15vh 0;
   background-image: linear-gradient(to bottom, rgba(32, 48, 99, 0.3), rgba(32, 48, 99, 0.95)), url(../img/event.jpg);
   background-size: cover;
-  background-position: center; }
+  background-position: bottom; }
+  @media only screen and (max-width: 56.25em) {
+    .section-events {
+      background-image: linear-gradient(to bottom, rgba(32, 48, 99, 0.75), rgba(32, 48, 99, 0.95)); } }
 
 .event-box {
   background-color: rgba(245, 128, 37, 0.8);
