@@ -38,3 +38,38 @@
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
 }
+
+@mixin buttonDesign{
+    text-transform: uppercase;
+      text-decoration: none;
+      padding: 1.5rem 4rem;
+      display: inline-block;
+      border-radius: 10rem;
+      margin-top: 1%;
+      font-size: 1.4rem;
+    border: none;
+    cursor: pointer;
+        &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba($color-black,.2);
+
+      &::after {
+          transform: scaleX(1.4) scaleY(1.6);
+          opacity: 0;
+      }
+  }
+  
+  &:active,
+  &:focus {
+      outline: none;
+      transform: translateY(-1px);
+      box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+  }
+
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 1);
+
+  @media only screen and (max-width: 56.25em),
+          only screen and (hover: none) {
+              box-shadow: none;
+          }
+}

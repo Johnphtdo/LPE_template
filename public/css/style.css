@@ -93,9 +93,8 @@ body {
     font-size: 2rem;
     display: block; }
 
-#about-history {
-  font-size: 2rem;
-  text-indent: 1rem;
+.about-us {
+  font-size: 1.5rem;
   width: 90%;
   margin: 2rem auto; }
 
@@ -105,11 +104,12 @@ body {
 .u-margin-bottom-4 {
   margin-bottom: 4rem; }
 
+.u-justify-text {
+  text-align: justify; }
+
 .btn-orange {
   background-color: #f58025;
-  color: #ffffff; }
-
-.classBtn {
+  color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -120,18 +120,45 @@ body {
   border: none;
   cursor: pointer;
   box-shadow: 0 1.5rem 4rem black; }
-  .classBtn:hover {
+  .btn-orange:hover {
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-    .classBtn:hover::after {
+    .btn-orange:hover::after {
       transform: scaleX(1.4) scaleY(1.6);
       opacity: 0; }
-  .classBtn:active, .classBtn:focus {
+  .btn-orange:active, .btn-orange:focus {
     outline: none;
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
-    .classBtn {
+    .btn-orange {
+      box-shadow: none; } }
+
+.btn-blue {
+  background-color: #203063;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  margin-top: 1%;
+  font-size: 1.4rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 1.5rem 4rem black; }
+  .btn-blue:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+    .btn-blue:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0; }
+  .btn-blue:active, .btn-blue:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    .btn-blue {
       box-shadow: none; } }
 
 .footer {
@@ -236,7 +263,7 @@ body {
 
 #header__home {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh);
-  background-image: linear-gradient(to bottom, rgba(32, 48, 99, 0.3), rgba(32, 48, 99, 0.95)), url(../img/header__home.jpg); }
+  background-image: linear-gradient(to bottom, rgba(32, 48, 99, 0.3), rgba(32, 48, 99, 0.75)), url(../img/header__home.jpg); }
 
 #header__brothers {
   background-image: linear-gradient(to bottom, rgba(32, 48, 99, 0.3), rgba(32, 48, 99, 0.95)), url(../img/header__brothers.jpg); }
@@ -371,19 +398,43 @@ body {
   top: 0;
   transform: rotate(-135deg); }
 
+.history__navigation {
+  text-align: center; }
+  @media only screen and (max-width: 56.25em) {
+    .history__navigation {
+      width: 100%;
+      text-align: center; } }
+
+.history__link:link, .history__link:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block; }
+
+.history__link:hover, .history__link:active {
+  color: #000000; }
+
+.history__list {
+  list-style: none; }
+
+.history__item {
+  display: inline-block; }
+  .history__item:not(:last-child) {
+    margin-right: 1.5rem;
+    margin-bottom: .5rem; }
+
 .section-about {
   padding: 25rem 0;
   margin: -20vh 0;
-  background-image: linear-gradient(to bottom, rgba(32, 48, 99, 0.3), rgba(32, 48, 99, 0.95)), url(../img/about.jpg);
   background-size: cover;
-  background-position: bottom; }
+  background-position: bottom;
+  background-image: linear-gradient(to bottom, rgba(32, 48, 99, 0.75), rgba(32, 48, 99, 0.95)), url(../img/about.jpg); }
 
 .section-events {
   padding: 10rem 0;
   margin: 15vh 0;
   background-image: linear-gradient(to bottom, rgba(32, 48, 99, 0.3), rgba(32, 48, 99, 0.95)), url(../img/event.jpg);
   background-size: cover;
-  background-position: bottom; }
+  background-position: center; }
 
 .event-box {
   background-color: rgba(245, 128, 37, 0.8);
@@ -401,6 +452,12 @@ body {
   .event-box__img {
     max-width: 100%;
     margin-bottom: 1rem; }
+
+.about {
+  display: none; }
+
+#about__national {
+  display: block; }
 
 .section-brothers {
   padding: 5rem 0;
