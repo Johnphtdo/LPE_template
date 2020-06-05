@@ -3,8 +3,8 @@
       color: $color-white;
       @include buttonDesign;
   }
-.btn-blue{
-    background-color: $color-primary;
-    color: $color-white;
+.btn-white{
+    background-color: rgba($color-white, .8);
+    color: $color-primary;
     @include buttonDesign;
 }

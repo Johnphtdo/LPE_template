@@ -14,8 +14,7 @@
 
   @include respond(tab-port) {
     width: 100%;
-    text-align: center;
-}
+  }
 }
    
   &__list{
@@ -29,6 +28,9 @@
     &:not(:last-child){
       margin-right: 1.5rem;
       margin-bottom: .5rem;
+      @include respond(tab-port) {
+        margin-right: 0;
+      }
     }
   }
 }

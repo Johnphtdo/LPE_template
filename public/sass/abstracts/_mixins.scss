@@ -43,10 +43,10 @@
     text-transform: uppercase;
       text-decoration: none;
       padding: 1.5rem 4rem;
-      display: inline-block;
       border-radius: 10rem;
-      margin-top: 1%;
       font-size: 1.4rem;
+      margin-top: 1%;
+      display: inline-block;
     border: none;
     cursor: pointer;
         &:hover {
@@ -66,10 +66,14 @@
       box-shadow: 0 .5rem 1rem rgba($color-black,.2);
   }
 
-    box-shadow: 0 1.5rem 4rem rgba($color-black, 1);
+    box-shadow: 0 .5rem 2rem rgba($color-black, .8);
 
   @media only screen and (max-width: 56.25em),
           only screen and (hover: none) {
               box-shadow: none;
+              transform: none;
+              padding: .75rem 2rem;
+            border-radius: 10rem;
+            font-size: 1.4rem;
           }
 }
