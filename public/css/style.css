@@ -407,8 +407,8 @@ body {
 
 .history__link:link, .history__link:visited {
   text-decoration: none;
-  text-transform: uppercase;
-  display: inline-block; }
+  display: inline-block;
+  color: #f58025; }
 
 .history__link:hover, .history__link:active {
   color: #000000; }

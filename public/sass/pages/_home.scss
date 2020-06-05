@@ -14,8 +14,8 @@
     &:visited{
   
         text-decoration: none;
-        text-transform: uppercase;
         display: inline-block;
+        color: $color-secondary;
     }
     
     &:hover,
