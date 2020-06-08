@@ -44,6 +44,7 @@
     font-weight: 400;
         font-size: 4rem;
         display:block;
+        margin-bottom: 1%;
       }
       
   &--sub{
@@ -60,5 +61,6 @@
       margin: 2rem auto;
       
 }
-
-
+.about-recruitment{
+  font-size: $small-font-size;
+}

@@ -87,7 +87,8 @@ body {
   .heading-secondary--main {
     font-weight: 400;
     font-size: 4rem;
-    display: block; }
+    display: block;
+    margin-bottom: 1%; }
   .heading-secondary--sub {
     font-weight: 700;
     font-size: 2rem;
@@ -98,6 +99,9 @@ body {
   width: 90%;
   margin: 2rem auto; }
 
+.about-recruitment {
+  font-size: 1.5rem; }
+
 .u-center-text {
   text-align: center; }
 
@@ -107,12 +111,18 @@ body {
 .u-justify-text {
   text-align: justify; }
 
+.u-justify-textR {
+  text-align: justify; }
+  @media only screen and (max-width: 56.25em) {
+    .u-justify-textR {
+      text-align: left; } }
+
 .btn-orange {
   background-color: #f58025;
   color: #ffffff;
-  text-transform: uppercase;
+  text-transform: initial;
   text-decoration: none;
-  padding: 1.5rem 4rem;
+  padding: .75rem 2rem;
   border-radius: 10rem;
   font-size: 1.4rem;
   margin-top: 1%;
@@ -134,9 +144,9 @@ body {
     .btn-orange {
       box-shadow: none;
       transform: none;
-      padding: .75rem 2rem;
+      padding: .5rem 1.75rem;
       border-radius: 10rem;
-      font-size: 1.4rem; } }
+      font-size: 1rem; } }
 
 .btn-white {
   background-color: rgba(255, 255, 255, 0.8);
@@ -519,5 +529,27 @@ body {
     margin-bottom: .5rem; }
   .brother-box__link {
     font-size: 3rem; }
+
+.card {
+  background-color: #f58025; }
+
+.contact-link:link, .contact-link:visited {
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block; }
+
+.contact-link:hover, .contact-link:active {
+  color: #203063; }
+
+.btn-link {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5rem; }
+  .btn-link:hover, .btn-link:active {
+    color: #000000; }
 
 /* Website Responsiveness */

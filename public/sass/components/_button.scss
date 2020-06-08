@@ -1,10 +1,11 @@
  .btn-orange{
       background-color: $color-secondary;
       color: $color-white;
-      @include buttonDesign;
+      @include buttonDesignSmall;
   }
 .btn-white{
     background-color: rgba($color-white, .8);
     color: $color-primary;
     @include buttonDesign;
 }
+

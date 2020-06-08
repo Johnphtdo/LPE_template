@@ -1,0 +1,31 @@
+.card {
+  background-color: $color-secondary;
+}
+
+.contact-link {
+  &:link,
+  &:visited {
+    color: $color-black;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+
+  &:hover,
+  &:active {
+    color: $color-primary;
+  }
+}
+.btn-link {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: $color-white;
+  text-decoration: none;
+  font-size: $small-font-size;
+
+  &:hover,
+  &:active {
+    color: $color-black;
+  }
+}
