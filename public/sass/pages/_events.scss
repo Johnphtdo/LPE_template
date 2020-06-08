@@ -1,0 +1,28 @@
+.section-events {
+  
+    padding: 10rem 0;
+    margin: -10vh 0;
+    background-image: linear-gradient(
+          to bottom,
+          rgba($color-primary, 0.3),
+          rgba($color-primary, 0.95)
+        );        
+    }
+  
+    .event-box {
+      @include card;
+  
+      &__heading{
+        font-size: $default-font-size;
+      }
+      &__text{
+        margin-top: 1rem;
+        border-top: 1px solid $color-black;
+        font-size: $default-font-size;
+        text-indent: 1rem;
+      }
+      &__img{
+        max-width: 100%;
+        margin-bottom: 1rem;
+      }
+    }

@@ -286,11 +286,15 @@ body {
 #header__brothers {
   background-image: linear-gradient(to bottom, rgba(32, 48, 99, 0.3), rgba(32, 48, 99, 0.95)), url(../img/header__brothers.jpg); }
 
-#header__alumni {
-  background-image: linear-gradient(to bottom, rgba(32, 48, 99, 0.3), rgba(32, 48, 99, 0.95)), url(../img/header__alumni.jpg); }
+#header__events {
+  background-image: linear-gradient(to bottom, rgba(32, 48, 99, 0.3), rgba(32, 48, 99, 0.9)), url(../img/header__events.jpg);
+  background-size: cover;
+  background-position: top; }
 
 #header__recruitment {
-  background-image: linear-gradient(to bottom, rgba(32, 48, 99, 0.3), rgba(32, 48, 99, 0.95)), url(../img/header__recruitment.jpg); }
+  background-image: linear-gradient(to bottom, rgba(32, 48, 99, 0.3), rgba(32, 48, 99, 0.95)), url(../img/header__recruitment.jpg);
+  background-size: cover;
+  background-position: center; }
 
 .navigation__checkbox {
   display: none; }
@@ -447,33 +451,6 @@ body {
   background-position: bottom;
   background-image: linear-gradient(to bottom, rgba(32, 48, 99, 0.75), rgba(32, 48, 99, 0.95)), url(../img/about.jpg); }
 
-.section-events {
-  padding: 10rem 0;
-  margin: 15vh 0;
-  background-image: linear-gradient(to bottom, rgba(32, 48, 99, 0.3), rgba(32, 48, 99, 0.95)), url(../img/event.jpg);
-  background-size: cover;
-  background-position: bottom; }
-  @media only screen and (max-width: 56.25em) {
-    .section-events {
-      background-image: linear-gradient(to bottom, rgba(32, 48, 99, 0.75), rgba(32, 48, 99, 0.95)); } }
-
-.event-box {
-  background-color: rgba(245, 128, 37, 0.8);
-  text-align: center;
-  padding: 2.5rem;
-  box-shadow: 0 1.5rem 4rem black; }
-  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
-    .event-box {
-      box-shadow: none; } }
-  .event-box__heading {
-    font-size: 2rem; }
-  .event-box__text {
-    font-size: 2rem;
-    text-indent: 1rem; }
-  .event-box__img {
-    max-width: 100%;
-    margin-bottom: 1rem; }
-
 .about {
   display: none; }
 
@@ -529,6 +506,30 @@ body {
     margin-bottom: .5rem; }
   .brother-box__link {
     font-size: 3rem; }
+
+.section-events {
+  padding: 10rem 0;
+  margin: -10vh 0;
+  background-image: linear-gradient(to bottom, rgba(32, 48, 99, 0.3), rgba(32, 48, 99, 0.95)); }
+
+.event-box {
+  background-color: rgba(245, 128, 37, 0.8);
+  text-align: center;
+  padding: 2.5rem;
+  box-shadow: 0 1.5rem 4rem black; }
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    .event-box {
+      box-shadow: none; } }
+  .event-box__heading {
+    font-size: 2rem; }
+  .event-box__text {
+    margin-top: 1rem;
+    border-top: 1px solid #000000;
+    font-size: 2rem;
+    text-indent: 1rem; }
+  .event-box__img {
+    max-width: 100%;
+    margin-bottom: 1rem; }
 
 .card {
   background-color: #f58025; }
