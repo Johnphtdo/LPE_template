@@ -6,6 +6,12 @@
 
     <!-- Lato font provided by Google -->
     <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
       rel="stylesheet"
     />
@@ -106,23 +112,49 @@
         <div class="history__navigation">
           <ul class="history__list">
             <li class="history__item">
-              <button class="btn-white btn-history" id="btn-national">
+              <button
+                class="btn-white btn-history"
+                id="btn-national"
+                type="button"
+                data-toggle="collapse"
+                data-target="#about__national"
+                aria-expanded="true"
+                aria-controls="about__national"
+              >
                 National
               </button>
             </li>
             <li class="history__item">
-              <button class="btn-white btn-history" id="btn-regional">
+              <button 
+              class="btn-white btn-history collapsed" 
+              id="btn-regional"
+              type="button"
+              data-toggle="collapse"
+              data-target="#about__regional"
+              aria-expanded="true"
+              aria-controls="about__regional">
                 Regional
               </button>
             </li>
             <li class="history__item">
-              <button class="btn-white btn-history" id="btn-local">
+              <button 
+              class="btn-white btn-history collapsed" 
+              id="btn-local"
+              data-toggle="collapse"
+              data-target="#about__local"
+              aria-expanded="true"
+              aria-controls="about__local">
                 Local
               </button>
             </li>
           </ul>
         </div>
-        <div class="about" id="about__national">
+        <div
+          class="about collapse show"
+          id="about__national"
+          aria-labelledby="btn-national"
+          data-parent=".section-about"
+        >
           <div class="u-center-text u-margin-bottom-4">
             <h3 class="heading-secondary">
               <span class="heading-secondary--main"
@@ -216,7 +248,11 @@
             </p>
           </div>
         </div>
-        <div class="about" id="about__regional">
+        <div 
+        class="about collapse"
+        id="about__regional"
+        aria-labelledby="btn-regional"
+        data-parent=".section-about">
           <div class="u-center-text u-margin-bottom-4">
             <h3 class="heading-secondary">
               <span class="heading-secondary--main">ABOUT THE SOUTHWEST</span>
@@ -245,7 +281,10 @@
           </div>
         </div>
 
-        <div class="about" id="about__local">
+        <div class="about collapse"
+        id="about__local"
+        aria-labelledby="btn-local"
+        data-parent=".section-about">
           <div class="u-center-text u-margin-bottom-4">
             <h3 class="heading-secondary">
               <span class="heading-secondary--main">ABOUT ββ CHAPTER</span>
@@ -359,6 +398,21 @@
         </div>
       </div>
     </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
 
