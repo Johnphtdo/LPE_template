@@ -452,10 +452,6 @@ body {
   background-position: bottom;
   background-image: linear-gradient(to bottom, rgba(32, 48, 99, 0.75), rgba(32, 48, 99, 0.95)), url(../img/about.jpg); }
 
-.section-brothers {
-  padding: 5rem 0;
-  margin: 5vh 0; }
-
 .section-classes {
   padding: 5rem 0;
   margin: 5vh 0; }
@@ -477,6 +473,13 @@ body {
     @media only screen and (max-width: 56.25em) {
       .classes__item:not(:last-child) {
         margin-right: 0; } }
+
+.spinner-border {
+  display: none; }
+
+.section-brothers {
+  padding: 5rem 0;
+  margin: 5vh 0; }
 
 .brother-box {
   background-color: rgba(245, 128, 37, 0.8);
