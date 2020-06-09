@@ -502,6 +502,12 @@ body {
   .brother-box__link {
     font-size: 3rem; }
 
+.motto {
+  display: none; }
+
+.brother-box {
+  display: none; }
+
 .section-events {
   padding: 10rem 0;
   margin: -10vh 0;
