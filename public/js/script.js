@@ -1,4 +1,4 @@
-import {brotherData} from './brotherData.js';
+import {brotherData} from './data/brotherData.js';
 
 $(document).ready(function(){
     $(`.btn-class`).on("click",function (){
@@ -45,7 +45,7 @@ $(document).ready(function(){
 
             }
         }
-        console.log(displayArray)
+        // console.log(displayArray)
 
         setTimeout(displayCards,1000)
         function displayCards() {
