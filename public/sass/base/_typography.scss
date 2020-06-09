@@ -14,6 +14,8 @@
 }
 
 .heading-primary {
+  text-shadow: $default-shadow;
+
     color: $color-white;
     backface-visibility: hidden;
 
@@ -36,7 +38,8 @@
   }
   
 .heading-secondary {
-      
+  text-shadow: $default-shadow;
+
   margin-bottom: 1%;
   display: inline-block;
   
@@ -55,12 +58,26 @@
 }
 
 .about-us{
-  
+  text-shadow: $default-shadow;
+
       font-size: $small-font-size;
-      width: 90%;
+      max-width: 75%;
       margin: 2rem auto;
-      
+      @include respond (tab-land){
+        max-width: 80%;
+        font-size: $default-font-size;
+      }
+      @include respond(tab-port){
+        max-width: 90%;
+        font-size: $default-font-size
+      }
 }
 .about-recruitment{
-  font-size: $small-font-size;
+  font-size: $default-font-size;
+  text-shadow: $default-shadow;
+  margin: 2rem auto;
+}
+.accordion {
+  font-size: $default-font-size;
+  margin: 2rem auto;
 }

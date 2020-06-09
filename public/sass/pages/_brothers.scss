@@ -8,9 +8,7 @@
   &__navigation{
     text-align: center;
     
-    @include respond(tab-port) {
-      width: 100%;
-    }
+
   }
   
   &__list{
@@ -45,9 +43,16 @@
     font-size: $default-font-size;
   }
   &__img{
-    max-width: 100%;
+    max-width: 90%;
     margin-bottom: 1rem;
     border-radius: 50%;
+    
+    @include respond(tab-land){
+      max-width: 75%;
+    }
+    @include respond(tab-port){
+      max-width: 20%;
+    }
   }
   &__list{
     margin-top: 1rem;

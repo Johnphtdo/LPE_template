@@ -41,10 +41,10 @@ html {
   font-size: 62.5%; }
   @media only screen and (max-width: 75em) {
     html {
-      font-size: 56.25%; } }
+      font-size: 62.5%; } }
   @media only screen and (max-width: 56.25em) {
     html {
-      font-size: 50%; } }
+      font-size: 56.25%; } }
   @media only screen and (min-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -64,6 +64,7 @@ body {
       padding: 0; } }
 
 .heading-primary {
+  text-shadow: 0.2rem 0.2rem #000000;
   color: #ffffff;
   backface-visibility: hidden; }
   .heading-primary--main {
@@ -82,6 +83,7 @@ body {
     animation: moveInRight 1s ease-in-out; }
 
 .heading-secondary {
+  text-shadow: 0.2rem 0.2rem #000000;
   margin-bottom: 1%;
   display: inline-block; }
   .heading-secondary--main {
@@ -95,12 +97,27 @@ body {
     display: block; }
 
 .about-us {
+  text-shadow: 0.2rem 0.2rem #000000;
   font-size: 1.5rem;
-  width: 90%;
+  max-width: 75%;
   margin: 2rem auto; }
+  @media only screen and (max-width: 75em) {
+    .about-us {
+      max-width: 80%;
+      font-size: 2rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .about-us {
+      max-width: 90%;
+      font-size: 2rem; } }
 
 .about-recruitment {
-  font-size: 1.5rem; }
+  font-size: 2rem;
+  text-shadow: 0.2rem 0.2rem #000000;
+  margin: 2rem auto; }
+
+.accordion {
+  font-size: 2rem;
+  margin: 2rem auto; }
 
 .u-center-text {
   text-align: center; }
@@ -120,16 +137,17 @@ body {
 .btn-orange {
   background-color: #f58025;
   color: #ffffff;
-  text-transform: initial;
+  text-transform: uppercase;
   text-decoration: none;
-  padding: .75rem 2rem;
+  padding: 1.5rem 4rem;
   border-radius: 10rem;
   font-size: 1.4rem;
   margin-top: 1%;
   display: inline-block;
   border: none;
   cursor: pointer;
-  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.8); }
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.8);
+  text-transform: initial; }
   .btn-orange:hover {
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -144,9 +162,9 @@ body {
     .btn-orange {
       box-shadow: none;
       transform: none;
-      padding: .5rem 1.75rem;
+      padding: .75rem 2rem;
       border-radius: 10rem;
-      font-size: 1rem; } }
+      font-size: 1.4rem; } }
 
 .btn-white {
   background-color: rgba(255, 255, 255, 0.8);
@@ -292,7 +310,7 @@ body {
   background-position: top; }
 
 #header__recruitment {
-  background-image: linear-gradient(to bottom, rgba(32, 48, 99, 0.3), rgba(32, 48, 99, 0.95)), url(../img/header__recruitment.jpg);
+  background-image: linear-gradient(to bottom, rgba(32, 48, 99, 0.3), rgba(32, 48, 99, 0.75)), url(../img/header__recruitment.jpg);
   background-size: cover;
   background-position: center; }
 
@@ -458,9 +476,6 @@ body {
 
 .classes__navigation {
   text-align: center; }
-  @media only screen and (max-width: 56.25em) {
-    .classes__navigation {
-      width: 100%; } }
 
 .classes__list {
   list-style: none; }
@@ -492,9 +507,15 @@ body {
   .brother-box__heading {
     font-size: 2rem; }
   .brother-box__img {
-    max-width: 100%;
+    max-width: 90%;
     margin-bottom: 1rem;
     border-radius: 50%; }
+    @media only screen and (max-width: 75em) {
+      .brother-box__img {
+        max-width: 75%; } }
+    @media only screen and (max-width: 56.25em) {
+      .brother-box__img {
+        max-width: 20%; } }
   .brother-box__list {
     margin-top: 1rem;
     border-top: 1px solid #000000;
@@ -556,5 +577,13 @@ body {
   font-size: 1.5rem; }
   .btn-link:hover, .btn-link:active {
     color: #000000; }
+
+.section-recruitment {
+  background-image: linear-gradient(to bottom, rgba(32, 48, 99, 0.5), rgba(32, 48, 99, 0.75)), url(../img/recruitment.jpg);
+  background-size: cover;
+  background-position: center; }
+  @media only screen and (max-width: 56.25em) {
+    .section-recruitment {
+      background-image: none; } }
 
 /* Website Responsiveness */

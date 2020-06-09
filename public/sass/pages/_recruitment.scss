@@ -29,3 +29,17 @@
     color: $color-black;
   }
 }
+
+.section-recruitment{
+  background-image: linear-gradient(
+    to bottom,
+    rgba($color-primary, 0.5),
+    rgba($color-primary, 0.75)
+  ),
+  url(../img/recruitment.jpg);
+  background-size: cover;
+  background-position: center;
+  @include respond(tab-port){
+    background-image: none;
+  }
+}

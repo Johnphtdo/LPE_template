@@ -1,7 +1,8 @@
  .btn-orange{
       background-color: $color-secondary;
       color: $color-white;
-      @include buttonDesignSmall;
+      @include buttonDesign;
+      text-transform: initial;
   }
 .btn-white{
     background-color: rgba($color-white, .8);
