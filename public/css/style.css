@@ -510,12 +510,12 @@ body {
     max-width: 90%;
     margin-bottom: 1rem;
     border-radius: 50%; }
-    @media only screen and (max-width: 75em) {
-      .brother-box__img {
-        max-width: 75%; } }
     @media only screen and (max-width: 56.25em) {
       .brother-box__img {
-        max-width: 20%; } }
+        max-width: 25%; } }
+    @media only screen and (max-width: 37.5em) {
+      .brother-box__img {
+        max-width: 35%; } }
   .brother-box__list {
     margin-top: 1rem;
     border-top: 1px solid #000000;

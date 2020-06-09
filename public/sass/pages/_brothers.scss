@@ -47,13 +47,15 @@
     margin-bottom: 1rem;
     border-radius: 50%;
     
-    @include respond(tab-land){
-      max-width: 75%;
-    }
+    
     @include respond(tab-port){
-      max-width: 20%;
+      max-width: 25%;
     }
+    @include respond(phone) {
+      max-width: 35%;
   }
+}
+
   &__list{
     margin-top: 1rem;
     border-top: 1px solid $color-black;
