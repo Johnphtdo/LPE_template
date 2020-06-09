@@ -32,8 +32,12 @@ $(document).ready(function(){
                 $(`#brotherUji${[i]}`).text("Uji: " + uji);
                 $(`#brotherMajor${[i]}`).text("Major: " + major);
                 $(`#brotherStatus${[i]}`).text("Status: " + status);
+                if (link == "null"){
+                    $(`#brotherLink${[i]}`).removeAttr("href")
+                }
+                else {
                 $(`#brotherLink${[i]}`).attr("href", link)
-
+                }
             }
         }
                
@@ -74,7 +78,6 @@ $(document).ready(function(){
                 $(`#brotherMajor${[i]}`).text("Major: " + major);
                 $(`#brotherStatus${[i]}`).text("Status: " + status);
                 $(`#brotherLink${[i]}`).attr("href", link)
-
             }
         }
                

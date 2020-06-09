@@ -60,7 +60,7 @@ export const brotherData = [
         brotherNickname:"Master P",
         brotherMajor:"Pharmacy",
         brotherStatus:"Alumnus",
-        brotherLinkedIn: " ",
+        brotherLinkedIn: "null",
         brotherUji: "Tony Ho",
 
     },
@@ -73,7 +73,7 @@ export const brotherData = [
         brotherNickname:"Kuma",
         brotherMajor:"Nursing",
         brotherStatus:"Alumnus",
-        brotherLinkedIn: " ",
+        brotherLinkedIn: "null",
         brotherUji: "Matthew Lu",
 
     },
@@ -86,7 +86,7 @@ export const brotherData = [
         brotherNickname:"Captain Pollution",
         brotherMajor:"Finance",
         brotherStatus:"Alumnus",
-        brotherLinkedIn: "",
+        brotherLinkedIn: "null",
         brotherUji: "Anthony Nguyen",
 
     },
@@ -112,7 +112,7 @@ export const brotherData = [
         brotherNickname:"Hulk Hogan",
         brotherMajor:"Biology",
         brotherStatus:"Active",
-        brotherLinkedIn: "",
+        brotherLinkedIn: "null",
         brotherUji: "Joe Tran",
 
     },
@@ -125,7 +125,7 @@ export const brotherData = [
         brotherNickname:"Neo",
         brotherMajor:"Biology",
         brotherStatus:"Alumnus",
-        brotherLinkedIn: "",
+        brotherLinkedIn: "null",
         brotherUji: "Lac Tran",
 
     },
