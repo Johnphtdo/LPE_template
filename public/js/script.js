@@ -139,6 +139,7 @@ $(document).ready(function () {
       setTimeout(displayCards, 1000);
       function displayCards() {
         $(`#brotherTitle`).text(displayArray[0].brotherUji + " Uji");
+        $(`#classMotto`).text("");
         $(`.motto`).css("display", "block");
         for (let i = 0; i < displayArray.length; i++) {
           let classCrossed = displayArray[i].brotherClass;
