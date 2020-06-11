@@ -1,406 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Lato font provided by Google -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/3913168c8f.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="css/icon-font.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="public/css/style.css" />
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="public/img/LambdaIcon.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>ΛΦE | Beta Beta Chapter</title>
-  </head>
-  <body>
-    <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+  <!-- Lato font provided by Google -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/3913168c8f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/icon-font.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link rel="stylesheet" href="public/css/style.css" />
+  <link rel="shortcut icon" type="image/png" href="public/img/LambdaIcon.png" />
 
-      <label for="navi-toggle" class="navigation__button">
-        <span class="navigation__icon">&nbsp;</span>
-      </label>
+  <title>ΛΦE | Beta Beta Chapter</title>
+</head>
 
-      <div class="navigation__background">&nbsp;</div>
+<body>
+  <div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
 
-      <nav class="navigation__nav">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="index.html" class="navigation__link">Home</a>
+    <label for="navi-toggle" class="navigation__button">
+      <span class="navigation__icon">&nbsp;</span>
+    </label>
+
+    <div class="navigation__background">&nbsp;</div>
+
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="index.html" class="navigation__link">Home</a>
+        </li>
+        <li class="navigation__item">
+          <a href="brothers.html" class="navigation__link">Brothers</a>
+        </li>
+        <li class="navigation__item">
+          <a href="events.html" class="navigation__link">Events</a>
+        </li>
+        <li class="navigation__item">
+          <a href="recruitment.html" class="navigation__link">Recruitment</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <header class="header" id="header__home">
+    <div class="header__logo-box">
+      <!-- Replace ChapterIcon.png in the img folder with your chapter's icon or use your school's icon. Change file format below if neccessary -->
+      <a href="index.html" class="header__link">
+        <img src="public/img/ChapterIcon.png" alt="Chapter logo" class="header__logo" />
+      </a>
+    </div>
+
+    <div class="header__text-box">
+      <h1 class="heading-primary">
+        <span class="heading-primary--main">LAMBDA PHI EPSILON</span>
+        <span class="heading-primary--sub">ββ CHAPTER AT THE UNIVERSITY OF TEXAS AT ARLINGTON</span>
+      </h1>
+    </div>
+  </header>
+  <main>
+    <section class="section-about">
+      <div class="history__navigation">
+        <ul class="history__list">
+          <li class="history__item">
+            <button class="btn_primary btn-history" id="btn-national" type="button" data-toggle="collapse"
+              data-target="#about__national" aria-expanded="true" aria-controls="about__national">
+              National
+            </button>
           </li>
-          <li class="navigation__item">
-            <a href="brothers.html" class="navigation__link">Brothers</a>
+          <li class="history__item">
+            <button class="btn_primary btn-history collapsed" id="btn-regional" type="button" data-toggle="collapse"
+              data-target="#about__regional" aria-expanded="true" aria-controls="about__regional">
+              Regional
+            </button>
           </li>
-          <li class="navigation__item">
-            <a href="events.html" class="navigation__link">Events</a>
-          </li>
-          <li class="navigation__item">
-            <a href="recruitment.html" class="navigation__link">Recruitment</a>
+          <li class="history__item">
+            <button class="btn_primary btn-history collapsed" id="btn-local" data-toggle="collapse"
+              data-target="#about__local" aria-expanded="true" aria-controls="about__local">
+              Local
+            </button>
           </li>
         </ul>
-      </nav>
-    </div>
-    <header class="header" id="header__home">
-      <div class="header__logo-box">
-        <!-- Replace ChapterIcon.png with your chapter's icon -->
-        <a href="index.html" class="header__link">
-          <img
-            src="public/img/ChapterIcon.png"
-            alt="Chapter logo"
-            class="header__logo"
-          />
-        </a>
       </div>
 
-      <div class="header__text-box">
-        <h1 class="heading-primary">
-          <span class="heading-primary--main">LAMBDA PHI EPSILON</span>
-          <span class="heading-primary--sub"
-            >ββ CHAPTER AT THE UNIVERSITY OF TEXAS AT ARLINGTON</span
-          >
-        </h1>
-      </div>
-    </header>
-    <main>
-      <section class="section-about">
-        <div class="history__navigation">
-          <ul class="history__list">
-            <li class="history__item">
-              <button
-                class="btn_primary btn-history"
-                id="btn-national"
-                type="button"
-                data-toggle="collapse"
-                data-target="#about__national"
-                aria-expanded="true"
-                aria-controls="about__national"
-              >
-                National
-              </button>
-            </li>
-            <li class="history__item">
-              <button 
-              class="btn_primary btn-history collapsed" 
-              id="btn-regional"
-              type="button"
-              data-toggle="collapse"
-              data-target="#about__regional"
-              aria-expanded="true"
-              aria-controls="about__regional">
-                Regional
-              </button>
-            </li>
-            <li class="history__item">
-              <button 
-              class="btn_primary btn-history collapsed" 
-              id="btn-local"
-              data-toggle="collapse"
-              data-target="#about__local"
-              aria-expanded="true"
-              aria-controls="about__local">
-                Local
-              </button>
-            </li>
-          </ul>
+      <div class="about collapse show" id="about__national" aria-labelledby="btn-national" data-parent=".section-about">
+        <div class="u-center-text u-margin-bottom-4">
+          <h3 class="heading-secondary">
+            <span class="heading-secondary--main">ABOUT LAMBDA PHI EPSILON</span>
+            <span class="heading-secondary--sub">The world's largest Asian-interest Fraternity</span>
+          </h3>
         </div>
-        
-        <div
-          class="about collapse show"
-          id="about__national"
-          aria-labelledby="btn-national"
-          data-parent=".section-about"
-        >
-          <div class="u-center-text u-margin-bottom-4">
-            <h3 class="heading-secondary">
-              <span class="heading-secondary--main"
-                >ABOUT LAMBDA PHI EPSILON</span
-              >
-              <span class="heading-secondary--sub"
-                >The world's largest Asian-interest Fraternity</span
-              >
-            </h3>
-          </div>
-          <div class="about-us">
-            <p>
-              Lambda Phi Epsilon was founded on February 25, 1981 by a group of
-              nineteen dedicated men led by principal founder Mr. Craig Ishigo.
-              The goal of the founders was to transcend the limitations faced by
-              traditional Asian-interest organizations on campus. While these
-              organizations were often split along lines of national origins,
-              the founders sought an establishment that drew its membership
-              equally from the different segments of the Asian American
-              community. Their vision was that the members would eventually
-              become the leaders of their respective ethnic communities, and
-              thus, bridge the gaps fragmenting the Asian American community
-              through their affiliation with a common organization.
-            </p>
-            <p>
-              The greatest hurdle in reaching this goal of unification was the
-              lack of continuity among the memberships inherent in traditional
-              campus organizations. At best, student associations provided a
-              circle of friends spanning the years of undergraduate study, and
-              at worst, a group of familiar strangers meeting periodically at
-              social functions. The yearly turnover of most organizations’
-              officers made it extremely difficult to pursue any extended
-              project as each new officer core set its own agenda. The founders’
-              solution to this dilemma was the adoption of a fraternal
-              structure. By forming Lambda Phi Epsilon as a new Asian-interest
-              fraternity, they aimed to set new standards of excellence for
-              Asian American organizations. The brothers not only formed strong
-              bonds of brotherhood with each other during their undergraduate
-              experience but also made lifelong commitments to the organization
-              as alumni even after graduation. While the initial charter was
-              comprised of Asian Pacific Americans, the brotherhood was open to
-              all who were interested in supporting these goals. Establishing
-              Alpha Chapter at UCLA, Mr. Craig Ishigo and Mr. Darryl L. Mu
-              signed the charter as President and Vice President, respectively.
-            </p>
-            <p>
-              On May 28th, 1990, the fraternity, now with six chapters total,
-              convened on the campus of the University of California, Irvine for
-              the first annual National Convention, which to this day has been
-              held regularly over Memorial Day weekend. A national governing
-              body was established to oversee the development of individual
-              chapters and the fraternity as a whole, with Mr. Robert Mimaki of
-              Beta Chapter, Mr. Eric Naritomi of Epsilon Chapter, and Mr. Doug
-              Nishida of Delta Chapter appointed as National President, Northern
-              Governor and Southern Governor, respectively.
-            </p>
-            <p>
-              On September 8th, 1990, Lambda Phi Epsilon reached another
-              milestone and became the first and only nationally recognized
-              Asian-interest fraternity in the United States with the admission
-              to the
-              <a
-                href="http://www.nicindy.org/"
-                target="_blank"
-                class="history__link"
-                >National Interfraternity Conference</a
-              >. In 2004, Lambda Phi Epsilon expanded as an international
-              fraternity by chartering its first chapter outside of the United
-              States at the University of Toronto. In 2006, Lambda Phi Epsilon
-              joined the
-              <a
-                href="http://www.napa-online.org/"
-                target="_blank"
-                class="history__link"
-                >National Asian Pacific Islander Desi American Panhellenic
-                Association</a
-              >
-              to increase collaboration and partnership between fellow APIA
-              Greek organizations. Today, Lambda Phi Epsilon is widely renown as
-              the preeminent international Asian-interest fraternal
-              organization, providing outstanding leadership, philanthropy, and
-              advocacy in the community.
-            </p>
-            <p>
-              The nineteen Founding Fathers of Lambda Phi Epsilon are: Mr.
-              Hunter Chang, Mr. Randy Fujimoto, Mr. John Hanvey, Master Craig
-              Ishigo, Mr. Jeff Kaku, Mr. Bobby Kawai, Mr. Dean Kumagawa, Mr. Jim
-              Lee, Mr. Bruce Mau, Mr. Ted Mihara, Mr. Neil Miyazaki, Mr. Darryl
-              L. Mu, Mr. Kelvin Sakai, Mr. Kevin Shida, Mr. Albert Sun, Mr.
-              Weyton Tam, Mr. Jamie Watanabe, Mr. Bennett Wong, Mr. Fred Wong.
-            </p>
-          </div>
-        </div>
-        <div 
-        class="about collapse"
-        id="about__regional"
-        aria-labelledby="btn-regional"
-        data-parent=".section-about">
-          <div class="u-center-text u-margin-bottom-4">
-            <h3 class="heading-secondary">
-              <span class="heading-secondary--main">ABOUT THE SOUTHWEST</span>
-              <span class="heading-secondary--sub"
-                >The Chapters in Texas and Oklahoma</span
-              >
-            </h3>
-          </div>
-          <div class="about-us">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sunt
-              accusamus, delectus nisi consectetur temporibus nesciunt quaerat
-              in modi, labore asperiores unde assumenda porro, quia earum
-              nostrum nihil libero? Eius inventore explicabo quos nesciunt cum
-              ut doloremque accusamus incidunt laudantium tempora doloribus
-              dolor, corporis dolorum aut adipisci nam officia praesentium.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-              voluptates eveniet omnis nulla expedita optio saepe aliquam est,
-              consequuntur dolore modi delectus quam vitae distinctio voluptatum
-              dignissimos blanditiis corporis assumenda. Optio ipsam sint
-              nesciunt modi exercitationem vitae et ad mollitia, aliquam enim
-              hic qui, natus perferendis, illum sequi nisi. Nisi.
-            </p>
-          </div>
-        </div>
-
-        <div class="about collapse"
-        id="about__local"
-        aria-labelledby="btn-local"
-        data-parent=".section-about">
-          <div class="u-center-text u-margin-bottom-4">
-            <h3 class="heading-secondary">
-              <span class="heading-secondary--main">ABOUT ββ CHAPTER</span>
-              <span class="heading-secondary--sub"
-                >The first and only international Asian-interest fraternity at
-                UTA</span
-              >
-            </h3>
-          </div>
-          <div class="about-us">
-            <p>
-              The DFW area has a large Asian American demographic, therefore at
-              the University of Texas at Arlington (UTA), there is a large Asian
-              American community because many students would commute from the
-              surrounding area. The school was inclusive with different student
-              organizations, but the Asian American community was still missing
-              an Asian interest fraternity or sorority. Nam Doan and Anthony
-              Nguyen visited different campuses in search of the best
-              organization and was inspired to bring Lambda Phi Epsilon to UTA.
-              Thus, the Altruistic Asian Association (AAA) was created on
-              January 25th, 2012, as an interest group to charter Lambda Phi
-              Epsilon.
-            </p>
-
-            <p>
-              In late 2012, almost a year of hard work and determination, AAA
-              was extended an offer to charter. By April 7th, 2013, after being
-              educated by Omar "Sinbad" Baker on how to operate and lead a
-              Lambda Phi Epsilon chapter, the following men officially crossed
-              as Charter Class: Charlie Danh, John Do, Johnny Do, Nam Doan, Tony
-              Ho, Hai Lam, Matthew Lu, Anthony Nguyen, Tommy Nguyen, Joe Tran, Lac
-              Tran, and Michael Tran. With their guidance, the chapter became a
-              prominent organization and created more interest for Greek culture
-              among the Asian American students. By May 26, 2019, the chapter
-              received their official letters and became the Beta Beta Chapter
-              of Lambda Phi Epsilon.
-            </p>
-
-            <p>If you want to contact the current leadership, please click
-              <a
-                href="mailto:president.utalambdas@gmail.com"
-                target="_blank"
-                class="history__link"
-                >here.</a
-              >
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="footer__logo-box">
-        <a href="index.html" class="footer">
-          <img
-            src="public/img/ChapterIcon.png"
-            alt=" Full Chapter logo"
-            class="footer__logo"
-          />
-        </a>
-      </div>
-      <div class="row">
-        <div class="col-1-of-2">
-          <div class="footer__navigation">
-            <ul class="footer__list">
-              <li class="footer__item">
-                <a href="brothers.html" class="footer__link">Brothers</a>
-              </li>
-              <li class="footer__item">
-                <a href="events.html" class="footer__link">Events</a>
-              </li>
-              <li class="footer__item">
-                <a href="recruitment.html" class="footer__link">Recruitment</a>
-              </li>
-              <li class="footer__item">
-                <a
-                  href="https://www.instagram.com/arlingtonlambdas/?hl=en"
-                  target="_blank"
-                  class="footer__link"
-                  >Instagram</a
-                >
-              </li>
-              <li class="footer__item">
-                <a
-                  href="https://twitter.com/arlingtonlphie?lang=en"
-                  target="_blank"
-                  class="footer__link"
-                  >Twitter</a
-                >
-              </li>
-              <li class="footer__item">
-                <a
-                  href="https://www.facebook.com/pg/arlington.lambdas/posts/"
-                  target="_blank"
-                  class="footer__link"
-                  >Facebook</a
-                >
-              </li>
-              
-            </ul>
-          </div>
-        </div>
-        <div class="col-1-of-2">
-          <p class="footer__copyright">
-            Built by
-            <a
-              href="https://www.linkedin.com/in/johnphtdo/"
-              target="_blank"
-              class="footer__link"
-              >John Do</a
-            >
-            to be used by chapters of Lambda Phi Epsilon. Credit to original
-            author,
-            <a
-              href="https://www.udemy.com/user/jonasschmedtmann/"
-              target="_blank"
-              class="footer__link"
-              >Jonas Schmedtmann</a
-            >
-            for providing resources to help build parts of this website.
+        <div class="about-us">
+          <p>
+            Lambda Phi Epsilon was founded on February 25, 1981 by a group of
+            nineteen dedicated men led by principal founder Mr. Craig Ishigo.
+            The goal of the founders was to transcend the limitations faced by
+            traditional Asian-interest organizations on campus. While these
+            organizations were often split along lines of national origins,
+            the founders sought an establishment that drew its membership
+            equally from the different segments of the Asian American
+            community. Their vision was that the members would eventually
+            become the leaders of their respective ethnic communities, and
+            thus, bridge the gaps fragmenting the Asian American community
+            through their affiliation with a common organization.
+          </p>
+          <p>
+            The greatest hurdle in reaching this goal of unification was the
+            lack of continuity among the memberships inherent in traditional
+            campus organizations. At best, student associations provided a
+            circle of friends spanning the years of undergraduate study, and
+            at worst, a group of familiar strangers meeting periodically at
+            social functions. The yearly turnover of most organizations’
+            officers made it extremely difficult to pursue any extended
+            project as each new officer core set its own agenda. The founders’
+            solution to this dilemma was the adoption of a fraternal
+            structure. By forming Lambda Phi Epsilon as a new Asian-interest
+            fraternity, they aimed to set new standards of excellence for
+            Asian American organizations. The brothers not only formed strong
+            bonds of brotherhood with each other during their undergraduate
+            experience but also made lifelong commitments to the organization
+            as alumni even after graduation. While the initial charter was
+            comprised of Asian Pacific Americans, the brotherhood was open to
+            all who were interested in supporting these goals. Establishing
+            Alpha Chapter at UCLA, Mr. Craig Ishigo and Mr. Darryl L. Mu
+            signed the charter as President and Vice President, respectively.
+          </p>
+          <p>
+            On May 28th, 1990, the fraternity, now with six chapters total,
+            convened on the campus of the University of California, Irvine for
+            the first annual National Convention, which to this day has been
+            held regularly over Memorial Day weekend. A national governing
+            body was established to oversee the development of individual
+            chapters and the fraternity as a whole, with Mr. Robert Mimaki of
+            Beta Chapter, Mr. Eric Naritomi of Epsilon Chapter, and Mr. Doug
+            Nishida of Delta Chapter appointed as National President, Northern
+            Governor and Southern Governor, respectively.
+          </p>
+          <p>
+            On September 8th, 1990, Lambda Phi Epsilon reached another
+            milestone and became the first and only nationally recognized
+            Asian-interest fraternity in the United States with the admission
+            to the
+            <a href="http://www.nicindy.org/" target="_blank" class="history__link">National Interfraternity
+              Conference</a>. In 2004, Lambda Phi Epsilon expanded as an international
+            fraternity by chartering its first chapter outside of the United
+            States at the University of Toronto. In 2006, Lambda Phi Epsilon
+            joined the
+            <a href="http://www.napa-online.org/" target="_blank" class="history__link">National Asian Pacific Islander
+              Desi American Panhellenic
+              Association</a>
+            to increase collaboration and partnership between fellow APIA
+            Greek organizations. Today, Lambda Phi Epsilon is widely renown as
+            the preeminent international Asian-interest fraternal
+            organization, providing outstanding leadership, philanthropy, and
+            advocacy in the community.
+          </p>
+          <p>
+            The nineteen Founding Fathers of Lambda Phi Epsilon are: Mr.
+            Hunter Chang, Mr. Randy Fujimoto, Mr. John Hanvey, Master Craig
+            Ishigo, Mr. Jeff Kaku, Mr. Bobby Kawai, Mr. Dean Kumagawa, Mr. Jim
+            Lee, Mr. Bruce Mau, Mr. Ted Mihara, Mr. Neil Miyazaki, Mr. Darryl
+            L. Mu, Mr. Kelvin Sakai, Mr. Kevin Shida, Mr. Albert Sun, Mr.
+            Weyton Tam, Mr. Jamie Watanabe, Mr. Bennett Wong, Mr. Fred Wong.
           </p>
         </div>
       </div>
-    </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      <div class="about collapse" id="about__regional" aria-labelledby="btn-regional" data-parent=".section-about">
+        <div class="u-center-text u-margin-bottom-4">
+          <h3 class="heading-secondary">
+            <span class="heading-secondary--main">ABOUT THE SOUTHWEST</span>
+            <span class="heading-secondary--sub">The Chapters in Texas and Oklahoma</span>
+          </h3>
+        </div>
+        <div class="about-us">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sunt
+            accusamus, delectus nisi consectetur temporibus nesciunt quaerat
+            in modi, labore asperiores unde assumenda porro, quia earum
+            nostrum nihil libero? Eius inventore explicabo quos nesciunt cum
+            ut doloremque accusamus incidunt laudantium tempora doloribus
+            dolor, corporis dolorum aut adipisci nam officia praesentium.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+            voluptates eveniet omnis nulla expedita optio saepe aliquam est,
+            consequuntur dolore modi delectus quam vitae distinctio voluptatum
+            dignissimos blanditiis corporis assumenda. Optio ipsam sint
+            nesciunt modi exercitationem vitae et ad mollitia, aliquam enim
+            hic qui, natus perferendis, illum sequi nisi. Nisi.
+          </p>
+        </div>
+      </div>
+
+      <div class="about collapse" id="about__local" aria-labelledby="btn-local" data-parent=".section-about">
+        <div class="u-center-text u-margin-bottom-4">
+          <h3 class="heading-secondary">
+            <span class="heading-secondary--main">ABOUT ββ CHAPTER</span>
+            <span class="heading-secondary--sub">The first and only international Asian-interest fraternity at
+              UTA</span>
+          </h3>
+        </div>
+        <div class="about-us">
+          <p>
+            The DFW area has a large Asian American demographic, therefore at
+            the University of Texas at Arlington (UTA), there is a large Asian
+            American community because many students would commute from the
+            surrounding area. The school was inclusive with different student
+            organizations, but the Asian American community was still missing
+            an Asian interest fraternity or sorority. Nam Doan and Anthony
+            Nguyen visited different campuses in search of the best
+            organization and was inspired to bring Lambda Phi Epsilon to UTA.
+            Thus, the Altruistic Asian Association (AAA) was created on
+            January 25th, 2012, as an interest group to charter Lambda Phi
+            Epsilon.
+          </p>
+
+          <p>
+            In late 2012, almost a year of hard work and determination, AAA
+            was extended an offer to charter. By April 7th, 2013, after being
+            educated by Omar "Sinbad" Baker on how to operate and lead a
+            Lambda Phi Epsilon chapter, the following men officially crossed
+            as Charter Class: Charlie Danh, John Do, Johnny Do, Nam Doan, Tony
+            Ho, Hai Lam, Matthew Lu, Anthony Nguyen, Tommy Nguyen, Joe Tran,
+            Lac Tran, and Michael Tran. With their guidance, the chapter
+            became a prominent organization and created more interest for
+            Greek culture among the Asian American students. By May 26, 2019,
+            the chapter received their official letters and became the Beta
+            Beta Chapter of Lambda Phi Epsilon.
+          </p>
+
+          <p>
+            If you want to contact the current leadership, please click
+            <!-- Change the email in the href to match your chapter's contact -->
+            <a href="mailto:president.utalambdas@gmail.com" target="_blank" class="history__link">here.</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__logo-box">
+      <a href="index.html" class="footer">
+        <!-- Replace ChapterIcon.png in the img folder with your chapter's icon or use your school's icon. Change file format below if neccessary -->
+        <img src="public/img/ChapterIcon.png" alt=" Full Chapter logo" class="footer__logo" />
+      </a>
+    </div>
+    <div class="row">
+      <div class="col-1-of-2">
+        <div class="footer__navigation">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="brothers.html" class="footer__link">Brothers</a>
+            </li>
+            <li class="footer__item">
+              <a href="events.html" class="footer__link">Events</a>
+            </li>
+            <li class="footer__item">
+              <a href="recruitment.html" class="footer__link">Recruitment</a>
+            </li>
+            <li class="footer__item">
+              <!-- Change links under href to match your chapter -->
+              <a href="https://www.instagram.com/arlingtonlambdas/?hl=en" target="_blank"
+                class="footer__link">Instagram</a>
+            </li>
+            <li class="footer__item">
+              <!-- Change links under href to match your chapter -->
+              <a href="https://twitter.com/arlingtonlphie?lang=en" target="_blank" class="footer__link">Twitter</a>
+            </li>
+            <li class="footer__item">
+              <!-- Change links under href to match your chapter -->
+              <a href="https://www.facebook.com/pg/arlington.lambdas/posts/" target="_blank"
+                class="footer__link">Facebook</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-1-of-2">
+        <!-- Please leave this if you are going to use the template; helps me build my network/brand. -->
+        <p class="footer__copyright">
+          Built by
+          <a href="https://www.linkedin.com/in/johnphtdo/" target="_blank" class="footer__link">John Do</a>
+          to be used by chapters of Lambda Phi Epsilon. Credit to original
+          author,
+          <a href="https://www.udemy.com/user/jonasschmedtmann/" target="_blank" class="footer__link">Jonas
+            Schmedtmann</a>
+          for providing resources to help build parts of this website.
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
 
 <!-- Website Template for Lambda Phi Epsilon ββ Chapter at the University of Texas at Arlington. Created by John Do, https://linktr.ee/JOHNPHTDO  -->

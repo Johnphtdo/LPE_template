@@ -9,9 +9,4 @@
     text-align: justify;
    
 }
-.u-justify-textR{
-    text-align: justify;
-    @include respond(tab-port) {
-        text-align: left;
-    }
-}
+

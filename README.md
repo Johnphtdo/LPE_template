@@ -43,6 +43,7 @@
 The purpose of this project is to create a website template to be used by the fraternity, Lambda Phi Epsilon. The structure of the website was made to be easy to follow and uses SASS for css to let others easily change the look of the website to fit the needs of the school. 
 
 ### Built With
+ * [Bootstrap](https://getbootstrap.com/)
  * [SASS](https://sass-lang.com/)
  * [Nodemon](https://www.npmjs.com/package/nodemon)
  * [jQuery Library - Chosen](https://harvesthq.github.io/chosen/)

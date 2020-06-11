@@ -1,808 +1,620 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Lato font provided by Google -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/3913168c8f.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="css/icon-font.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="public/css/style.css" />
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="public/img/LambdaIcon.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Brothers | ΛΦE | Beta Beta Chapter</title>
-  </head>
-  <body>
-    <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+  <!-- Lato font provided by Google -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/3913168c8f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/icon-font.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link rel="stylesheet" href="public/css/style.css" />
+  <link rel="shortcut icon" type="image/png" href="public/img/LambdaIcon.png" />
 
-      <label for="navi-toggle" class="navigation__button">
-        <span class="navigation__icon">&nbsp;</span>
-      </label>
+  <title>Brothers | ΛΦE | Beta Beta Chapter</title>
+</head>
 
-      <div class="navigation__background">&nbsp;</div>
+<body>
+  <div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
 
-      <nav class="navigation__nav">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="index.html" class="navigation__link">Home</a>
+    <label for="navi-toggle" class="navigation__button">
+      <span class="navigation__icon">&nbsp;</span>
+    </label>
+
+    <div class="navigation__background">&nbsp;</div>
+
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="index.html" class="navigation__link">Home</a>
+        </li>
+        <li class="navigation__item">
+          <a href="brothers.html" class="navigation__link">Brothers</a>
+        </li>
+        <li class="navigation__item">
+          <a href="events.html" class="navigation__link">Events</a>
+        </li>
+        <li class="navigation__item">
+          <a href="recruitment.html" class="navigation__link">Recruitment</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <header class="header" id="header__brothers">
+    <div class="header__logo-box">
+      <!-- Replace ChapterIcon.png in the img folder with your chapter's icon or use your school's icon. Change file format below if neccessary -->
+      <a href="index.html" class="header__link">
+        <img src="public/img/ChapterIcon.png" alt="Chapter logo" class="header__logo" />
+      </a>
+    </div>
+
+    <div class="header__text-box">
+      <h1 class="heading-primary">
+        <span class="heading-primary--main">LAMBDA PHI EPSILON</span>
+        <span class="heading-primary--sub">THE BROTHERS OF ββ CHAPTER </span>
+      </h1>
+    </div>
+  </header>
+  <main>
+    <section class="section-classes">
+      <div class="classes__navigation">
+        <h3 class="heading-secondary">
+          <span class="heading-secondary--sub">Class</span>
+        </h3>
+        <ul class="classes__list">
+          <li class="classes__item">
+            <button type="button" class="btn_secondary btn-class">
+              Charter
+            </button>
           </li>
-          <li class="navigation__item">
-            <a href="brothers.html" class="navigation__link">Brothers</a>
+          <li class="classes__item">
+            <button type="button" class="btn_secondary btn-class">Alpha</button>
           </li>
-          <li class="navigation__item">
-            <a href="events.html" class="navigation__link">Events</a>
+          <li class="classes__item">
+            <button type="button" class="btn_secondary btn-class">Beta</button>
           </li>
-          <li class="navigation__item">
-            <a href="recruitment.html" class="navigation__link">Recruitment</a>
+          <li class="classes__item">
+            <button type="button" class="btn_secondary btn-class">Gamma</button>
+          </li>
+          <li class="classes__item">
+            <button type="button" class="btn_secondary btn-class">Delta</button>
+          </li>
+          <li class="classes__item">
+            <button type="button" class="btn_secondary btn-class">
+              Epsilon
+            </button>
+          </li>
+          <li class="classes__item">
+            <button type="button" class="btn_secondary btn-class">Zeta</button>
+          </li>
+          <li class="classes__item">
+            <button type="button" class="btn_secondary btn-class">Eta</button>
+          </li>
+          <li class="classes__item">
+            <button type="button" class="btn_secondary btn-class">Theta</button>
+          </li>
+          <li class="classes__item">
+            <button type="button" class="btn_secondary btn-class">Iota</button>
+          </li>
+          <li class="classes__item">
+            <button type="button" class="btn_secondary btn-class">Kappa</button>
+          </li>
+          <li class="classes__item">
+            <button type="button" class="btn_secondary btn-class">Mu</button>
+          </li>
+          <li class="classes__item">
+            <button type="button" class="btn_secondary btn-class">Nu</button>
+          </li>
+          <li class="classes__item">
+            <button type="button" class="btn_secondary btn-class">Xi</button>
+          </li>
+          <li class="classes__item">
+            <button type="button" class="btn_secondary btn-class">
+              Omicron
+            </button>
           </li>
         </ul>
-      </nav>
-    </div>
-    <header class="header" id="header__brothers">
-      <div class="header__logo-box">
-        <!-- Replace ChapterIcon.png with your chapter's icon -->
-        <a href="index.html" class="header__link">
-          <img
-            src="public/img/ChapterIcon.png"
-            alt="Chapter logo"
-            class="header__logo"
-          />
-        </a>
       </div>
-
-      <div class="header__text-box">
-        <h1 class="heading-primary">
-          <span class="heading-primary--main">LAMBDA PHI EPSILON</span>
-          <span class="heading-primary--sub">THE BROTHERS OF ββ CHAPTER </span>
-        </h1>
+      <div class="classes__navigation">
+        <h3 class="heading-secondary">
+          <span class="heading-secondary--sub">Uji</span>
+        </h3>
+        <ul class="classes__list">
+          <li class="classes__item">
+            <button type="button" class="btn_secondary btn-uji">
+              Charlie Danh
+            </button>
+          </li>
+          <li class="classes__item">
+            <button type="button" class="btn_secondary btn-uji">
+              John Do
+            </button>
+          </li>
+          <li class="classes__item">
+            <button type="button" class="btn_secondary btn-uji">
+              Johnny Do
+            </button>
+          </li>
+          <li class="classes__item">
+            <button type="button" class="btn_secondary btn-uji">
+              Nam Doan
+            </button>
+          </li>
+          <li class="classes__item">
+            <button type="button" class="btn_secondary btn-uji">
+              Tony Ho
+            </button>
+          </li>
+          <li class="classes__item">
+            <button type="button" class="btn_secondary btn-uji">
+              Hai Lam
+            </button>
+          </li>
+          <li class="classes__item">
+            <button type="button" class="btn_secondary btn-uji">
+              Matthew Lu
+            </button>
+          </li>
+          <li class="classes__item">
+            <button type="button" class="btn_secondary btn-uji">
+              Anthony Nguyen
+            </button>
+          </li>
+          <li class="classes__item">
+            <button type="button" class="btn_secondary btn-uji">
+              Tommy Nguyen
+            </button>
+          </li>
+          <li class="classes__item">
+            <button type="button" class="btn_secondary btn-uji">
+              Joe Tran
+            </button>
+          </li>
+          <li class="classes__item">
+            <button type="button" class="btn_secondary btn-uji">
+              Lac Tran
+            </button>
+          </li>
+          <li class="classes__item">
+            <button type="button" class="btn_secondary btn-uji">
+              Michael Tran
+            </button>
+          </li>
+        </ul>
       </div>
-    </header>
-    <main>
-      <section class="section-classes">
-        <div class="classes__navigation">
-          <h3 class="heading-secondary">
-            <span class="heading-secondary--sub">Class</span>
-          </h3>
-          <ul class="classes__list">
-            <li class="classes__item">
-              <button type="button" class="btn_secondary btn-class" id="btn-charter">
-                Charter
-              </button>
-            </li>
-            <li class="classes__item">
-              <button type="button" class="btn_secondary btn-class" id="btn-alpha">Alpha</button>
-            </li>
-            <li class="classes__item">
-              <button type="button" class="btn_secondary btn-class" id="btn-beta">Beta</button>
-            </li>
-            <li class="classes__item">
-              <button type="button" class="btn_secondary btn-class" id="btn-gamma">Gamma</button>
-            </li>
-            <li class="classes__item">
-              <button type="button" class="btn_secondary btn-class" id="btn-delta">Delta</button>
-            </li>
-            <li class="classes__item">
-              <button type="button" class="btn_secondary btn-class" id="btn-epsilon">
-                Epsilon
-              </button>
-            </li>
-            <li class="classes__item">
-              <button type="button" class="btn_secondary btn-class" id="btn-zeta">Zeta</button>
-            </li>
-            <li class="classes__item">
-              <button type="button" class="btn_secondary btn-class" id="btn-eta">Eta</button>
-            </li>
-            <li class="classes__item">
-              <button type="button" class="btn_secondary btn-class" id="btn-theta">Theta</button>
-            </li>
-            <li class="classes__item">
-              <button type="button" class="btn_secondary btn-class" id="btn-iota">Iota</button>
-            </li>
-            <li class="classes__item">
-              <button type="button" class="btn_secondary btn-class" id="btn-kappa">Kappa</button>
-            </li>
-            <li class="classes__item">
-              <button type="button" class="btn_secondary btn-class" id="btn-mu">Mu</button>
-            </li>
-            <li class="classes__item">
-              <button type="button" class="btn_secondary btn-class" id="btn-nu">Nu</button>
-            </li>
-            <li class="classes__item">
-              <button type="button" class="btn_secondary btn-class" id="btn-xi">Xi</button>
-            </li>
-            <li class="classes__item">
-              <button type="button" class="btn_secondary btn-class" id="btn-omicron">
-                Omicron
-              </button>
-            </li>
-          </ul>
+    </section>
+    <section class="section-brothers">
+      <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+          <span class="sr-only">Loading...</span>
         </div>
-        <div class="classes__navigation">
-          <h3 class="heading-secondary">
-            <span class="heading-secondary--sub">Uji</span>
-          </h3>
-          <ul class="classes__list">
-            <li class="classes__item">
-              <button type="button" class="btn_secondary btn-uji" id="btn-charlieDanh">
-                Charlie Danh
-              </button>
-            </li>
-            <li class="classes__item">
-              <button type="button" class="btn_secondary btn-uji" id="btn-johnDo">
-                John Do
-              </button>
-            </li>
-            <li class="classes__item">
-              <button type="button" class="btn_secondary btn-uji" id="btn-johnnyDo">
-                Johnny Do
-              </button>
-            </li>
-            <li class="classes__item">
-              <button type="button" class="btn_secondary btn-uji" id="btn-namDoan">
-                Nam Doan
-              </button>
-            </li>
-            <li class="classes__item">
-              <button type="button" class="btn_secondary btn-uji" id="btn-tonyHo">
-                Tony Ho
-              </button>
-            </li>
-            <li class="classes__item">
-              <button type="button" class="btn_secondary btn-uji" id="btn-haiLam">
-                Hai Lam
-              </button>
-            </li>
-            <li class="classes__item">
-              <button type="button" class="btn_secondary btn-uji" id="btn-matthewLu">
-                Matthew Lu
-              </button>
-            </li>
-            <li class="classes__item">
-              <button type="button" class="btn_secondary btn-uji" id="btn-anthonyNguyen">
-                Anthony Nguyen
-              </button>
-            </li>
-            <li class="classes__item">
-              <button type="button" class="btn_secondary btn-uji" id="btn-tommyNguyen">
-                Tommy Nguyen
-              </button>
-            </li>
-            <li class="classes__item">
-              <button type="button" class="btn_secondary btn-uji" id="btn-joeTran">
-                Joe Tran
-              </button>
-            </li>
-            <li class="classes__item">
-              <button type="button" class="btn_secondary btn-uji" id="btn-lacTran">
-                Lac Tran
-              </button>
-            </li>
-            <li class="classes__item">
-              <button type="button" class="btn_secondary btn-uji" id="btn-michaelTran">
-                Michael Tran
-              </button>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="section-brothers">
-        <div class="d-flex justify-content-center">
-          <div class="spinner-border" role="status">
-            <span class="sr-only">Loading...</span>
+      </div>
+      <div class="u-center-text u-margin-bottom-4 motto">
+        <h3 class="heading-secondary">
+          <span class="heading-secondary--main" id="brotherTitle"></span>
+          <span class="heading-secondary--sub" id="classMotto"></span>
+        </h3>
+      </div>
+      <!--Max display of 16. If your category needs more cards, copy the entire row div between the comments and paste where indicated. -->
+      <!--Start copy at the below line-->
+      <div class="row">
+        <div class="col-1-of-4">
+          <div class="brother-box" id="brother-box0">
+            <img id="brotherImg0" src="" alt="" class="brother-box__img" />
+            <h3 class="brother-box__heading" id="brotherName0"></h3>
+            <ul class="brother-box__list">
+              <li class="brother-box__item" id="brotherNumber0"></li>
+              <li class="brother-box__item" id="brotherCrossed0">
+              </li>
+              <li class="brother-box__item" id="brotherNickName0">
+              </li>
+              <li class="brother-box__item" id="brotherUji0">
+              </li>
+              <li class="brother-box__item" id="brotherMajor0"></li>
+              <li class="brother-box__item" id="brotherStatus0"></li>
+            </ul>
+            <a id="brotherLink0" href="/" target="_blank" class="brother-box__link">
+              <i class="fab fa-linkedin"></i>
+            </a>
           </div>
         </div>
-        <div class="u-center-text u-margin-bottom-4 motto">
-          <h3 class="heading-secondary">
-            <span class="heading-secondary--main" id="brotherTitle"></span>
-            <span class="heading-secondary--sub" id="classMotto"></span>
-          </h3>
+
+        <div class="col-1-of-4">
+          <div class="brother-box" id="brother-box1">
+            <img id="brotherImg1" src="" alt="" class="brother-box__img" />
+            <h3 class="brother-box__heading" id="brotherName1"></h3>
+            <ul class="brother-box__list">
+              <li class="brother-box__item" id="brotherNumber1"></li>
+              <li class="brother-box__item" id="brotherCrossed1">
+              </li>
+              <li class="brother-box__item" id="brotherNickName1">
+              </li>
+              <li class="brother-box__item" id="brotherUji1">
+              </li>
+              <li class="brother-box__item" id="brotherMajor1"></li>
+              <li class="brother-box__item" id="brotherStatus1"></li>
+            </ul>
+            <a id="brotherLink1" href="/" target="_blank" class="brother-box__link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
         </div>
-               
-        <div class="row">
-          <div class="col-1-of-4">
-            <div class="brother-box"
-            id="brother-box0">
-              <img id="brotherImg0"
-                src=""
-                alt=""
-                class="brother-box__img"
-              />
-              <h3 class="brother-box__heading" id="brotherName0"></h3>
-              <ul class="brother-box__list">
-                <li class="brother-box__item" id="brotherNumber0"></li>
-                <li class="brother-box__item" id="brotherCrossed0">
-                </li>
-                <li class="brother-box__item" id="brotherNickName0">
-                </li>
-                <li class="brother-box__item" id="brotherUji0">
-                </li>
-                <li class="brother-box__item" id="brotherMajor0"></li>
-                <li class="brother-box__item" id="brotherStatus0"></li>
-              </ul>
-              <a id="brotherLink0"
-                href="/"
-                target="_blank"
-                class="brother-box__link"
-              >
-                <i class="fab fa-linkedin"></i>
-              </a>
-            </div>
-          </div>
 
-          <div class="col-1-of-4">
-            <div class="brother-box"
-            id="brother-box1">
-              <img id="brotherImg1"
-                src=""
-                alt=""
-                class="brother-box__img"
-              />
-              <h3 class="brother-box__heading" id="brotherName1"></h3>
-              <ul class="brother-box__list">
-                <li class="brother-box__item" id="brotherNumber1"></li>
-                <li class="brother-box__item" id="brotherCrossed1">
-                </li>
-                <li class="brother-box__item" id="brotherNickName1">
-                </li>
-                <li class="brother-box__item" id="brotherUji1">
-                </li>
-                <li class="brother-box__item" id="brotherMajor1"></li>
-                <li class="brother-box__item" id="brotherStatus1"></li>
-              </ul>
-              <a id="brotherLink1"
-                href="/"
-                target="_blank"
-                class="brother-box__link"
-              >
-                <i class="fab fa-linkedin"></i>
-              </a>
-            </div>
+        <div class="col-1-of-4">
+          <div class="brother-box" id="brother-box2">
+            <img id="brotherImg2" src="" alt="" class="brother-box__img" />
+            <h3 class="brother-box__heading" id="brotherName2"></h3>
+            <ul class="brother-box__list">
+              <li class="brother-box__item" id="brotherNumber2"></li>
+              <li class="brother-box__item" id="brotherCrossed2">
+              </li>
+              <li class="brother-box__item" id="brotherNickName2">
+              </li>
+              <li class="brother-box__item" id="brotherUji2">
+              </li>
+              <li class="brother-box__item" id="brotherMajor2"></li>
+              <li class="brother-box__item" id="brotherStatus2"></li>
+            </ul>
+            <a id="brotherLink2" href="/" target="_blank" class="brother-box__link">
+              <i class="fab fa-linkedin"></i>
+            </a>
           </div>
+        </div>
 
-          <div class="col-1-of-4">
-            <div class="brother-box"
-            id="brother-box2">
-              <img id="brotherImg2"
-                src=""
-                alt=""
-                class="brother-box__img"
-              />
-              <h3 class="brother-box__heading" id="brotherName2"></h3>
-              <ul class="brother-box__list">
-                <li class="brother-box__item" id="brotherNumber2"></li>
-                <li class="brother-box__item" id="brotherCrossed2">
-                </li>
-                <li class="brother-box__item" id="brotherNickName2">
-                </li>
-                <li class="brother-box__item" id="brotherUji2">
-                </li>
-                <li class="brother-box__item" id="brotherMajor2"></li>
-                <li class="brother-box__item" id="brotherStatus2"></li>
-              </ul>
-              <a id="brotherLink2"
-                href="/"
-                target="_blank"
-                class="brother-box__link"
-              >
-                <i class="fab fa-linkedin"></i>
-              </a>
-            </div>
+        <div class="col-1-of-4">
+          <div class="brother-box" id="brother-box3">
+            <img id="brotherImg3" src="" alt="" class="brother-box__img" />
+            <h3 class="brother-box__heading" id="brotherName3"></h3>
+            <ul class="brother-box__list">
+              <li class="brother-box__item" id="brotherNumber3"></li>
+              <li class="brother-box__item" id="brotherCrossed3">
+              </li>
+              <li class="brother-box__item" id="brotherNickName3">
+              </li>
+              <li class="brother-box__item" id="brotherUji3">
+              </li>
+              <li class="brother-box__item" id="brotherMajor3"></li>
+              <li class="brother-box__item" id="brotherStatus3"></li>
+            </ul>
+            <a id="brotherLink3" href="/" target="_blank" class="brother-box__link">
+              <i class="fab fa-linkedin"></i>
+            </a>
           </div>
-          
-          <div class="col-1-of-4">
-            <div class="brother-box"
-            id="brother-box3">
-              <img id="brotherImg3"
-                src=""
-                alt=""
-                class="brother-box__img"
-              />
-              <h3 class="brother-box__heading" id="brotherName3"></h3>
-              <ul class="brother-box__list">
-                <li class="brother-box__item" id="brotherNumber3"></li>
-                <li class="brother-box__item" id="brotherCrossed3">
-                </li>
-                <li class="brother-box__item" id="brotherNickName3">
-                </li>
-                <li class="brother-box__item" id="brotherUji3">
-                </li>
-                <li class="brother-box__item" id="brotherMajor3"></li>
-                <li class="brother-box__item" id="brotherStatus3"></li>
-              </ul>
-              <a id="brotherLink3"
-                href="/"
-                target="_blank"
-                class="brother-box__link"
-              >
-                <i class="fab fa-linkedin"></i>
-              </a>
-            </div>
+        </div>
+      </div>
+      <!-- End the copy here -->
+
+      <div class="row">
+        <div class="col-1-of-4">
+          <div class="brother-box" id="brother-box4">
+            <img id="brotherImg4" src="" alt="" class="brother-box__img" />
+            <h3 class="brother-box__heading" id="brotherName4"></h3>
+            <ul class="brother-box__list">
+              <li class="brother-box__item" id="brotherNumber4"></li>
+              <li class="brother-box__item" id="brotherCrossed4">
+              </li>
+              <li class="brother-box__item" id="brotherNickName4">
+              </li>
+              <li class="brother-box__item" id="brotherUji4">
+              </li>
+              <li class="brother-box__item" id="brotherMajor4"></li>
+              <li class="brother-box__item" id="brotherStatus4"></li>
+            </ul>
+            <a id="brotherLink4" href="/" target="_blank" class="brother-box__link">
+              <i class="fab fa-linkedin"></i>
+            </a>
           </div>
-            </div>
-            <div class="row">
-              <div class="col-1-of-4">
-                <div class="brother-box"
-                id="brother-box4">
-                  <img id="brotherImg4"
-                    src=""
-                    alt=""
-                    class="brother-box__img"
-                  />
-                  <h3 class="brother-box__heading" id="brotherName4"></h3>
-                  <ul class="brother-box__list">
-                    <li class="brother-box__item" id="brotherNumber4"></li>
-                    <li class="brother-box__item" id="brotherCrossed4">
-                    </li>
-                    <li class="brother-box__item" id="brotherNickName4">
-                    </li>
-                    <li class="brother-box__item" id="brotherUji4">
-                    </li>
-                    <li class="brother-box__item" id="brotherMajor4"></li>
-                    <li class="brother-box__item" id="brotherStatus4"></li>
-                  </ul>
-                  <a id="brotherLink4"
-                    href="/"
-                    target="_blank"
-                    class="brother-box__link"
-                  >
-                    <i class="fab fa-linkedin"></i>
-                  </a>
-                </div>
-              </div>
-    
-              <div class="col-1-of-4">
-                <div class="brother-box"
-                id="brother-box5">
-                  <img id="brotherImg5"
-                    src=""
-                    alt=""
-                    class="brother-box__img"
-                  />
-                  <h3 class="brother-box__heading" id="brotherName5"></h3>
-                  <ul class="brother-box__list">
-                    <li class="brother-box__item" id="brotherNumber5"></li>
-                    <li class="brother-box__item" id="brotherCrossed5">
-                    </li>
-                    <li class="brother-box__item" id="brotherNickName5">
-                    </li>
-                    <li class="brother-box__item" id="brotherUji5">
-                    </li>
-                    <li class="brother-box__item" id="brotherMajor5"></li>
-                    <li class="brother-box__item" id="brotherStatus5"></li>
-                  </ul>
-                  <a id="brotherLink5"
-                    href="/"
-                    target="_blank"
-                    class="brother-box__link"
-                  >
-                    <i class="fab fa-linkedin"></i>
-                  </a>
-                </div>
-              </div>
-    
-              <div class="col-1-of-4">
-                <div class="brother-box"
-                id="brother-box6">
-                  <img id="brotherImg6"
-                    src=""
-                    alt=""
-                    class="brother-box__img"
-                  />
-                  <h3 class="brother-box__heading" id="brotherName6"></h3>
-                  <ul class="brother-box__list">
-                    <li class="brother-box__item" id="brotherNumber6"></li>
-                    <li class="brother-box__item" id="brotherCrossed6">
-                    </li>
-                    <li class="brother-box__item" id="brotherNickName6">
-                    </li>
-                    <li class="brother-box__item" id="brotherUji6">
-                    </li>
-                    <li class="brother-box__item" id="brotherMajor6"></li>
-                    <li class="brother-box__item" id="brotherStatus6"></li>
-                  </ul>
-                  <a id="brotherLink6"
-                    href="/"
-                    target="_blank"
-                    class="brother-box__link"
-                  >
-                    <i class="fab fa-linkedin"></i>
-                  </a>
-                </div>
-              </div>
-              
-              <div class="col-1-of-4">
-                <div class="brother-box"
-                id="brother-box7">
-                  <img id="brotherImg7"
-                    src=""
-                    alt=""
-                    class="brother-box__img"
-                  />
-                  <h3 class="brother-box__heading" id="brotherName7"></h3>
-                  <ul class="brother-box__list">
-                    <li class="brother-box__item" id="brotherNumber7"></li>
-                    <li class="brother-box__item" id="brotherCrossed7">
-                    </li>
-                    <li class="brother-box__item" id="brotherNickName7">
-                    </li>
-                    <li class="brother-box__item" id="brotherUji7">
-                    </li>
-                    <li class="brother-box__item" id="brotherMajor7"></li>
-                    <li class="brother-box__item" id="brotherStatus7"></li>
-                  </ul>
-                  <a id="brotherLink7"
-                    href="/"
-                    target="_blank"
-                    class="brother-box__link"
-                  >
-                    <i class="fab fa-linkedin"></i>
-                  </a>
-                </div>
-              </div>
-                </div>
-                <div class="row">
-                  <div class="col-1-of-4">
-                    <div class="brother-box"
-                    id="brother-box8">
-                      <img id="brotherImg8"
-                        src=""
-                        alt=""
-                        class="brother-box__img"
-                      />
-                      <h3 class="brother-box__heading" id="brotherName8"></h3>
-                      <ul class="brother-box__list">
-                        <li class="brother-box__item" id="brotherNumber8"></li>
-                        <li class="brother-box__item" id="brotherCrossed8">
-                        </li>
-                        <li class="brother-box__item" id="brotherNickName8">
-                        </li>
-                        <li class="brother-box__item" id="brotherUji8">
-                        </li>
-                        <li class="brother-box__item" id="brotherMajor8"></li>
-                        <li class="brother-box__item" id="brotherStatus8"></li>
-                      </ul>
-                      <a id="brotherLink8"
-                        href="/"
-                        target="_blank"
-                        class="brother-box__link"
-                      >
-                        <i class="fab fa-linkedin"></i>
-                      </a>
-                    </div>
-                  </div>
-        
-                  <div class="col-1-of-4">
-                    <div class="brother-box"
-                    id="brother-box9">
-                      <img id="brotherImg9"
-                        src=""
-                        alt=""
-                        class="brother-box__img"
-                      />
-                      <h3 class="brother-box__heading" id="brotherName9"></h3>
-                      <ul class="brother-box__list">
-                        <li class="brother-box__item" id="brotherNumber9"></li>
-                        <li class="brother-box__item" id="brotherCrossed9">
-                        </li>
-                        <li class="brother-box__item" id="brotherNickName9">
-                        </li>
-                        <li class="brother-box__item" id="brotherUji9">
-                        </li>
-                        <li class="brother-box__item" id="brotherMajor9"></li>
-                        <li class="brother-box__item" id="brotherStatus9"></li>
-                      </ul>
-                      <a id="brotherLink9"
-                        href="/"
-                        target="_blank"
-                        class="brother-box__link"
-                      >
-                        <i class="fab fa-linkedin"></i>
-                      </a>
-                    </div>
-                  </div>
-        
-                  <div class="col-1-of-4">
-                    <div class="brother-box"
-                    id="brother-box10">
-                      <img id="brotherImg10"
-                        src=""
-                        alt=""
-                        class="brother-box__img"
-                      />
-                      <h3 class="brother-box__heading" id="brotherName10"></h3>
-                      <ul class="brother-box__list">
-                        <li class="brother-box__item" id="brotherNumber10"></li>
-                        <li class="brother-box__item" id="brotherCrossed10">
-                        </li>
-                        <li class="brother-box__item" id="brotherNickName10">
-                        </li>
-                        <li class="brother-box__item" id="brotherUji10">
-                        </li>
-                        <li class="brother-box__item" id="brotherMajor10"></li>
-                        <li class="brother-box__item" id="brotherStatus10"></li>
-                      </ul>
-                      <a id="brotherLink10"
-                        href="/"
-                        target="_blank"
-                        class="brother-box__link"
-                      >
-                        <i class="fab fa-linkedin"></i>
-                      </a>
-                    </div>
-                  </div>
-                  
-                  <div class="col-1-of-4">
-                    <div class="brother-box"
-                    id="brother-box11">
-                      <img id="brotherImg11"
-                        src=""
-                        alt=""
-                        class="brother-box__img"
-                      />
-                      <h3 class="brother-box__heading" id="brotherName11"></h3>
-                      <ul class="brother-box__list">
-                        <li class="brother-box__item" id="brotherNumber11"></li>
-                        <li class="brother-box__item" id="brotherCrossed11">
-                        </li>
-                        <li class="brother-box__item" id="brotherNickName11">
-                        </li>
-                        <li class="brother-box__item" id="brotherUji11">
-                        </li>
-                        <li class="brother-box__item" id="brotherMajor11"></li>
-                        <li class="brother-box__item" id="brotherStatus11"></li>
-                      </ul>
-                      <a id="brotherLink11"
-                        href="/"
-                        target="_blank"
-                        class="brother-box__link"
-                      >
-                        <i class="fab fa-linkedin"></i>
-                      </a>
-                    </div>
-                  </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-1-of-4">
-                        <div class="brother-box"
-                        id="brother-box12">
-                          <img id="brotherImg12"
-                            src=""
-                            alt=""
-                            class="brother-box__img"
-                          />
-                          <h3 class="brother-box__heading" id="brotherName12"></h3>
-                          <ul class="brother-box__list">
-                            <li class="brother-box__item" id="brotherNumber12"></li>
-                            <li class="brother-box__item" id="brotherCrossed12">
-                            </li>
-                            <li class="brother-box__item" id="brotherNickName12">
-                            </li>
-                            <li class="brother-box__item" id="brotherUji12">
-                            </li>
-                            <li class="brother-box__item" id="brotherMajor12"></li>
-                            <li class="brother-box__item" id="brotherStatus12"></li>
-                          </ul>
-                          <a id="brotherLink12"
-                            href="/"
-                            target="_blank"
-                            class="brother-box__link"
-                          >
-                            <i class="fab fa-linkedin"></i>
-                          </a>
-                        </div>
-                      </div>
-            
-                      <div class="col-1-of-4">
-                        <div class="brother-box"
-                        id="brother-box13">
-                          <img id="brotherImg13"
-                            src=""
-                            alt=""
-                            class="brother-box__img"
-                          />
-                          <h3 class="brother-box__heading" id="brotherName13"></h3>
-                          <ul class="brother-box__list">
-                            <li class="brother-box__item" id="brotherNumber13"></li>
-                            <li class="brother-box__item" id="brotherCrossed13">
-                            </li>
-                            <li class="brother-box__item" id="brotherNickName13">
-                            </li>
-                            <li class="brother-box__item" id="brotherUji13">
-                            </li>
-                            <li class="brother-box__item" id="brotherMajor13"></li>
-                            <li class="brother-box__item" id="brotherStatus13"></li>
-                          </ul>
-                          <a id="brotherLink13"
-                            href="/"
-                            target="_blank"
-                            class="brother-box__link"
-                          >
-                            <i class="fab fa-linkedin"></i>
-                          </a>
-                        </div>
-                      </div>
-            
-                      <div class="col-1-of-4">
-                        <div class="brother-box"
-                        id="brother-box14">
-                          <img id="brotherImg14"
-                            src=""
-                            alt=""
-                            class="brother-box__img"
-                          />
-                          <h3 class="brother-box__heading" id="brotherName14"></h3>
-                          <ul class="brother-box__list">
-                            <li class="brother-box__item" id="brotherNumber14"></li>
-                            <li class="brother-box__item" id="brotherCrossed14">
-                            </li>
-                            <li class="brother-box__item" id="brotherNickName14">
-                            </li>
-                            <li class="brother-box__item" id="brotherUji14">
-                            </li>
-                            <li class="brother-box__item" id="brotherMajor14"></li>
-                            <li class="brother-box__item" id="brotherStatus14"></li>
-                          </ul>
-                          <a id="brotherLink14"
-                            href="/"
-                            target="_blank"
-                            class="brother-box__link"
-                          >
-                            <i class="fab fa-linkedin"></i>
-                          </a>
-                        </div>
-                      </div>
-                      
-                      <div class="col-1-of-4">
-                        <div class="brother-box"
-                        id="brother-box15">
-                          <img id="brotherImg15"
-                            src=""
-                            alt=""
-                            class="brother-box__img"
-                          />
-                          <h3 class="brother-box__heading" id="brotherName15"></h3>
-                          <ul class="brother-box__list">
-                            <li class="brother-box__item" id="brotherNumber15"></li>
-                            <li class="brother-box__item" id="brotherCrossed15">
-                            </li>
-                            <li class="brother-box__item" id="brotherNickName15">
-                            </li>
-                            <li class="brother-box__item" id="brotherUji15">
-                            </li>
-                            <li class="brother-box__item" id="brotherMajor15"></li>
-                            <li class="brother-box__item" id="brotherStatus15"></li>
-                          </ul>
-                          <a id="brotherLink15"
-                            href="/"
-                            target="_blank"
-                            class="brother-box__link"
-                          >
-                            <i class="fab fa-linkedin"></i>
-                          </a>
-                        </div>
-                      </div>
-                        </div>
-          
+        </div>
 
-       
-      </section>
-    </main>
+        <div class="col-1-of-4">
+          <div class="brother-box" id="brother-box5">
+            <img id="brotherImg5" src="" alt="" class="brother-box__img" />
+            <h3 class="brother-box__heading" id="brotherName5"></h3>
+            <ul class="brother-box__list">
+              <li class="brother-box__item" id="brotherNumber5"></li>
+              <li class="brother-box__item" id="brotherCrossed5">
+              </li>
+              <li class="brother-box__item" id="brotherNickName5">
+              </li>
+              <li class="brother-box__item" id="brotherUji5">
+              </li>
+              <li class="brother-box__item" id="brotherMajor5"></li>
+              <li class="brother-box__item" id="brotherStatus5"></li>
+            </ul>
+            <a id="brotherLink5" href="/" target="_blank" class="brother-box__link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
 
-    <footer class="footer">
-      <div class="footer__logo-box">
-        <a href="index.html" class="footer">
-          <img
-            src="public/img/ChapterIcon.png"
-            alt=" Full Chapter logo"
-            class="footer__logo"
-          />
-        </a>
+        <div class="col-1-of-4">
+          <div class="brother-box" id="brother-box6">
+            <img id="brotherImg6" src="" alt="" class="brother-box__img" />
+            <h3 class="brother-box__heading" id="brotherName6"></h3>
+            <ul class="brother-box__list">
+              <li class="brother-box__item" id="brotherNumber6"></li>
+              <li class="brother-box__item" id="brotherCrossed6">
+              </li>
+              <li class="brother-box__item" id="brotherNickName6">
+              </li>
+              <li class="brother-box__item" id="brotherUji6">
+              </li>
+              <li class="brother-box__item" id="brotherMajor6"></li>
+              <li class="brother-box__item" id="brotherStatus6"></li>
+            </ul>
+            <a id="brotherLink6" href="/" target="_blank" class="brother-box__link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-1-of-4">
+          <div class="brother-box" id="brother-box7">
+            <img id="brotherImg7" src="" alt="" class="brother-box__img" />
+            <h3 class="brother-box__heading" id="brotherName7"></h3>
+            <ul class="brother-box__list">
+              <li class="brother-box__item" id="brotherNumber7"></li>
+              <li class="brother-box__item" id="brotherCrossed7">
+              </li>
+              <li class="brother-box__item" id="brotherNickName7">
+              </li>
+              <li class="brother-box__item" id="brotherUji7">
+              </li>
+              <li class="brother-box__item" id="brotherMajor7"></li>
+              <li class="brother-box__item" id="brotherStatus7"></li>
+            </ul>
+            <a id="brotherLink7" href="/" target="_blank" class="brother-box__link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
       </div>
       <div class="row">
-        <div class="col-1-of-2">
-          <div class="footer__navigation">
-            <ul class="footer__list">
-              <li class="footer__item">
-                <a href="brothers.html" class="footer__link">Brothers</a>
+        <div class="col-1-of-4">
+          <div class="brother-box" id="brother-box8">
+            <img id="brotherImg8" src="" alt="" class="brother-box__img" />
+            <h3 class="brother-box__heading" id="brotherName8"></h3>
+            <ul class="brother-box__list">
+              <li class="brother-box__item" id="brotherNumber8"></li>
+              <li class="brother-box__item" id="brotherCrossed8">
               </li>
-              <li class="footer__item">
-                <a href="events.html" class="footer__link">Events</a>
+              <li class="brother-box__item" id="brotherNickName8">
               </li>
-              <li class="footer__item">
-                <a href="recruitment.html" class="footer__link">Recruitment</a>
+              <li class="brother-box__item" id="brotherUji8">
               </li>
-              <li class="footer__item">
-                <a
-                  href="https://www.instagram.com/arlingtonlambdas/?hl=en"
-                  target="_blank"
-                  class="footer__link"
-                  >Instagram</a
-                >
-              </li>
-              <li class="footer__item">
-                <a
-                  href="https://twitter.com/arlingtonlphie?lang=en"
-                  target="_blank"
-                  class="footer__link"
-                  >Twitter</a
-                >
-              </li>
-              <li class="footer__item">
-                <a
-                  href="https://www.facebook.com/pg/arlington.lambdas/posts/"
-                  target="_blank"
-                  class="footer__link"
-                  >Facebook</a
-                >
-              </li>
+              <li class="brother-box__item" id="brotherMajor8"></li>
+              <li class="brother-box__item" id="brotherStatus8"></li>
             </ul>
+            <a id="brotherLink8" href="/" target="_blank" class="brother-box__link">
+              <i class="fab fa-linkedin"></i>
+            </a>
           </div>
         </div>
-        <div class="col-1-of-2">
-          <p class="footer__copyright">
-            Built by
-            <a
-              href="https://www.linkedin.com/in/johnphtdo/"
-              target="_blank"
-              class="footer__link"
-              >John Do</a
-            >
-            to be used by chapters of Lambda Phi Epsilon. Credit to original
-            author,
-            <a
-              href="https://www.udemy.com/user/jonasschmedtmann/"
-              target="_blank"
-              class="footer__link"
-              >Jonas Schmedtmann</a
-            >
-            for providing resources to help build parts of this website.
-          </p>
+
+        <div class="col-1-of-4">
+          <div class="brother-box" id="brother-box9">
+            <img id="brotherImg9" src="" alt="" class="brother-box__img" />
+            <h3 class="brother-box__heading" id="brotherName9"></h3>
+            <ul class="brother-box__list">
+              <li class="brother-box__item" id="brotherNumber9"></li>
+              <li class="brother-box__item" id="brotherCrossed9">
+              </li>
+              <li class="brother-box__item" id="brotherNickName9">
+              </li>
+              <li class="brother-box__item" id="brotherUji9">
+              </li>
+              <li class="brother-box__item" id="brotherMajor9"></li>
+              <li class="brother-box__item" id="brotherStatus9"></li>
+            </ul>
+            <a id="brotherLink9" href="/" target="_blank" class="brother-box__link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-1-of-4">
+          <div class="brother-box" id="brother-box10">
+            <img id="brotherImg10" src="" alt="" class="brother-box__img" />
+            <h3 class="brother-box__heading" id="brotherName10"></h3>
+            <ul class="brother-box__list">
+              <li class="brother-box__item" id="brotherNumber10"></li>
+              <li class="brother-box__item" id="brotherCrossed10">
+              </li>
+              <li class="brother-box__item" id="brotherNickName10">
+              </li>
+              <li class="brother-box__item" id="brotherUji10">
+              </li>
+              <li class="brother-box__item" id="brotherMajor10"></li>
+              <li class="brother-box__item" id="brotherStatus10"></li>
+            </ul>
+            <a id="brotherLink10" href="/" target="_blank" class="brother-box__link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-1-of-4">
+          <div class="brother-box" id="brother-box11">
+            <img id="brotherImg11" src="" alt="" class="brother-box__img" />
+            <h3 class="brother-box__heading" id="brotherName11"></h3>
+            <ul class="brother-box__list">
+              <li class="brother-box__item" id="brotherNumber11"></li>
+              <li class="brother-box__item" id="brotherCrossed11">
+              </li>
+              <li class="brother-box__item" id="brotherNickName11">
+              </li>
+              <li class="brother-box__item" id="brotherUji11">
+              </li>
+              <li class="brother-box__item" id="brotherMajor11"></li>
+              <li class="brother-box__item" id="brotherStatus11"></li>
+            </ul>
+            <a id="brotherLink11" href="/" target="_blank" class="brother-box__link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
         </div>
       </div>
-    </footer>
-    
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-        <script type="module" rel="javascript" src="public/js/data/brotherData.js"></script>
-    <script type="module" rel="javascript" src="public/js/script.js"></script>
-  </body>
+      <div class="row">
+        <div class="col-1-of-4">
+          <div class="brother-box" id="brother-box12">
+            <img id="brotherImg12" src="" alt="" class="brother-box__img" />
+            <h3 class="brother-box__heading" id="brotherName12"></h3>
+            <ul class="brother-box__list">
+              <li class="brother-box__item" id="brotherNumber12"></li>
+              <li class="brother-box__item" id="brotherCrossed12">
+              </li>
+              <li class="brother-box__item" id="brotherNickName12">
+              </li>
+              <li class="brother-box__item" id="brotherUji12">
+              </li>
+              <li class="brother-box__item" id="brotherMajor12"></li>
+              <li class="brother-box__item" id="brotherStatus12"></li>
+            </ul>
+            <a id="brotherLink12" href="/" target="_blank" class="brother-box__link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-1-of-4">
+          <div class="brother-box" id="brother-box13">
+            <img id="brotherImg13" src="" alt="" class="brother-box__img" />
+            <h3 class="brother-box__heading" id="brotherName13"></h3>
+            <ul class="brother-box__list">
+              <li class="brother-box__item" id="brotherNumber13"></li>
+              <li class="brother-box__item" id="brotherCrossed13">
+              </li>
+              <li class="brother-box__item" id="brotherNickName13">
+              </li>
+              <li class="brother-box__item" id="brotherUji13">
+              </li>
+              <li class="brother-box__item" id="brotherMajor13"></li>
+              <li class="brother-box__item" id="brotherStatus13"></li>
+            </ul>
+            <a id="brotherLink13" href="/" target="_blank" class="brother-box__link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-1-of-4">
+          <div class="brother-box" id="brother-box14">
+            <img id="brotherImg14" src="" alt="" class="brother-box__img" />
+            <h3 class="brother-box__heading" id="brotherName14"></h3>
+            <ul class="brother-box__list">
+              <li class="brother-box__item" id="brotherNumber14"></li>
+              <li class="brother-box__item" id="brotherCrossed14">
+              </li>
+              <li class="brother-box__item" id="brotherNickName14">
+              </li>
+              <li class="brother-box__item" id="brotherUji14">
+              </li>
+              <li class="brother-box__item" id="brotherMajor14"></li>
+              <li class="brother-box__item" id="brotherStatus14"></li>
+            </ul>
+            <a id="brotherLink14" href="/" target="_blank" class="brother-box__link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-1-of-4">
+          <div class="brother-box" id="brother-box15">
+            <img id="brotherImg15" src="" alt="" class="brother-box__img" />
+            <h3 class="brother-box__heading" id="brotherName15"></h3>
+            <ul class="brother-box__list">
+              <li class="brother-box__item" id="brotherNumber15"></li>
+              <li class="brother-box__item" id="brotherCrossed15">
+              </li>
+              <li class="brother-box__item" id="brotherNickName15">
+              </li>
+              <li class="brother-box__item" id="brotherUji15">
+              </li>
+              <li class="brother-box__item" id="brotherMajor15"></li>
+              <li class="brother-box__item" id="brotherStatus15"></li>
+            </ul>
+            <a id="brotherLink15" href="/" target="_blank" class="brother-box__link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Paste new row below here if needed. Make sure to change id's to match number of boxes. i.e edit the ids brother__0 to brother__16-->
+
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__logo-box">
+      <a href="index.html" class="footer">
+        <img src="public/img/ChapterIcon.png" alt=" Full Chapter logo" class="footer__logo" />
+      </a>
+    </div>
+    <div class="row">
+      <div class="col-1-of-2">
+        <div class="footer__navigation">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="brothers.html" class="footer__link">Brothers</a>
+            </li>
+            <li class="footer__item">
+              <a href="events.html" class="footer__link">Events</a>
+            </li>
+            <li class="footer__item">
+              <a href="recruitment.html" class="footer__link">Recruitment</a>
+            </li>
+            <li class="footer__item">
+              <!-- Change links under href to match your chapter -->
+              <a href="https://www.instagram.com/arlingtonlambdas/?hl=en" target="_blank"
+                class="footer__link">Instagram</a>
+            </li>
+            <li class="footer__item">
+              <!-- Change links under href to match your chapter -->
+              <a href="https://twitter.com/arlingtonlphie?lang=en" target="_blank" class="footer__link">Twitter</a>
+            </li>
+            <li class="footer__item">
+              <!-- Change links under href to match your chapter -->
+              <a href="https://www.facebook.com/pg/arlington.lambdas/posts/" target="_blank"
+                class="footer__link">Facebook</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-1-of-2">
+        <p class="footer__copyright">
+          Built by
+          <a href="https://www.linkedin.com/in/johnphtdo/" target="_blank" class="footer__link">John Do</a>
+          to be used by chapters of Lambda Phi Epsilon. Credit to original
+          author,
+          <a href="https://www.udemy.com/user/jonasschmedtmann/" target="_blank" class="footer__link">Jonas
+            Schmedtmann</a>
+          for providing resources to help build parts of this website.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script type="module" rel="javascript" src="public/js/data/brotherData.js"></script>
+  <script type="module" rel="javascript" src="public/js/script.js"></script>
+</body>
+
 </html>
 
 <!-- Website Template for Lambda Phi Epsilon ββ Chapter at the University of Texas at Arlington. Created by John Do, https://linktr.ee/JOHNPHTDO  -->

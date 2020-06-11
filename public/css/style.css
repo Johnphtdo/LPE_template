@@ -1,11 +1,5 @@
 /*  
-Colors for Webpage 
-LPE Royal Blue: #203063 | rgba(32,48,99,0.8)
-LPE Navy: #536895 | rgba(83,104,149, 0.8)
-UTA Primary Blue: #0064b1 | rgba(0,100,177,0.8)
-UTA Secondary Blue: #00447C | rgba(0,68,124,0.8)
-UTA Orange: #f58025 | rgba(245,128,37,0.8)
-White: #FFFFFF | rgba(255,255,255, 1)
+Colors for Webpage. Change the colors primary and secondary according to your chapter/school
 */
 /* Animations for Header */
 @keyframes moveInLeft {
@@ -127,12 +121,6 @@ body {
 
 .u-justify-text {
   text-align: justify; }
-
-.u-justify-textR {
-  text-align: justify; }
-  @media only screen and (max-width: 56.25em) {
-    .u-justify-textR {
-      text-align: left; } }
 
 .btn_secondary {
   background-color: #f58025;
