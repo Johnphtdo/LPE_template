@@ -1,20 +1,25 @@
 import { brotherData, classInfo } from "./data/brotherData.js";
 
 $(document).ready(function () {
+  // When button is clicked, it will start looking for brothers according to class by going through the data.
   $(`.btn-class`).on("click", function () {
+    // After click, clears current display and shows loading spin.
     $(`.brother-box`).css("display", "none");
     $(`.motto`).css("display", "none");
     $(`.spinner-border`).css("display", "block");
+
+    // The button text must match exactly to the array of brother objects. "Charter" button matches "Charter" in brotherClass.
     let btnValue = $(this)[0].innerText;
     let data = brotherData;
     let displayArray = [];
 
+    // Timer to remove the loading spin.
     setTimeout(hideLoader, 1000);
-
     function hideLoader() {
       $(`.spinner-border`).css("display", "none");
     }
 
+    // Pushing the class into a new array so it will match card ID's
     for (let i = 0; i < data.length; i++) {
       if (data[i].brotherClass == btnValue) {
         let classCrossed = data[i].brotherClass;
@@ -44,9 +49,7 @@ $(document).ready(function () {
       }
     }
 
-    // console.log(displayArray)
-    // console.log(classInfo);
-
+    // Timer set to give site time to get the correct info and display to matching boxes. Site currently has 16 columns available to display data.
     setTimeout(displayCards, 1000);
     function displayCards() {
       let motto = "";
@@ -92,24 +95,32 @@ $(document).ready(function () {
     }
 
     //Debug/Testing
+    // console.log(displayArray)
+    // console.log(classInfo);
     // console.log("I have been clicked.");
     // console.log(btnValue);
   });
 
+  // When button is clicked, it will start looking for brothers according to uji name by going through the data.
   $(`.btn-uji`).on("click", function () {
+    
+    // After click, clears current display and shows loading spin.
     $(`.brother-box`).css("display", "none");
     $(`.motto`).css("display", "none");
     $(`.spinner-border`).css("display", "block");
+
+    // The button text must match exactly to the array of brother objects. "John Do" button matches "John Do" in brotherUji.
     let btnValue = $(this)[0].innerText;
     let data = brotherData;
     let displayArray = [];
 
+    // Timer to remove the loading spin.
     setTimeout(hideLoader, 1000);
-
     function hideLoader() {
       $(`.spinner-border`).css("display", "none");
     }
 
+    // Pushing the uji into a new array so it will match card ID's
     for (let i = 0; i < data.length; i++) {
       if (data[i].brotherUji == btnValue) {
         let classCrossed = data[i].brotherClass;
@@ -137,6 +148,8 @@ $(document).ready(function () {
         };
         displayArray.push(brotherObject);
       }
+
+      // Timer set to give site time to get the correct info and display to matching boxes. Site currently has 16 columns available to display data.
       setTimeout(displayCards, 1000);
       function displayCards() {
         $(`#brotherTitle`).text(displayArray[0].brotherUji + " Uji");

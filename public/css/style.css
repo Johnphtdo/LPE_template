@@ -134,7 +134,7 @@ body {
     .u-justify-textR {
       text-align: left; } }
 
-.btn-orange {
+.btn_secondary {
   background-color: #f58025;
   color: #ffffff;
   text-transform: uppercase;
@@ -148,25 +148,25 @@ body {
   cursor: pointer;
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.8);
   text-transform: initial; }
-  .btn-orange:hover {
+  .btn_secondary:hover {
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-    .btn-orange:hover::after {
+    .btn_secondary:hover::after {
       transform: scaleX(1.4) scaleY(1.6);
       opacity: 0; }
-  .btn-orange:active, .btn-orange:focus {
+  .btn_secondary:active, .btn_secondary:focus {
     outline: none;
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
-    .btn-orange {
+    .btn_secondary {
       box-shadow: none;
       transform: none;
       padding: .75rem 2rem;
       border-radius: 10rem;
       font-size: 1.4rem; } }
 
-.btn-white {
+.btn_primary {
   background-color: rgba(255, 255, 255, 0.8);
   color: #203063;
   text-transform: uppercase;
@@ -179,18 +179,18 @@ body {
   border: none;
   cursor: pointer;
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.8); }
-  .btn-white:hover {
+  .btn_primary:hover {
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-    .btn-white:hover::after {
+    .btn_primary:hover::after {
       transform: scaleX(1.4) scaleY(1.6);
       opacity: 0; }
-  .btn-white:active, .btn-white:focus {
+  .btn_primary:active, .btn_primary:focus {
     outline: none;
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
-    .btn-white {
+    .btn_primary {
       box-shadow: none;
       transform: none;
       padding: .75rem 2rem;
