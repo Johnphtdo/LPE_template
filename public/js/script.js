@@ -4,9 +4,9 @@ $(document).ready(function () {
   // When button is clicked, it will start looking for brothers according to class by going through the data.
   $(`.btn-class`).on("click", function () {
     // After click, clears current display and shows loading spin.
-    $(`.brother-box`).toggleClass("hide");
-    $(`.motto`).toggleClass("hide");
-    $(`.spinner-border`).toggleClass("hide");
+    $(`.brother-box`).css("display", "none");
+    $(`.motto`).css("display", "none");
+    $(`.spinner-border`).css("display", "block");
 
     // The button text must match exactly to the array of brother objects. "Charter" button matches "Charter" in brotherClass.
     let btnValue = $(this)[0].innerText;
@@ -16,7 +16,7 @@ $(document).ready(function () {
     // Timer to remove the loading spin.
     setTimeout(hideLoader, 1000);
     function hideLoader() {
-      $(`.spinner-border`).toggleClass("hide");
+      $(`.spinner-border`).css("display", "none");
     }
 
     // Pushing the class into a new array so it will match card ID's
@@ -62,7 +62,7 @@ $(document).ready(function () {
         $(`#classMotto`).text(motto);
       }
 
-      $(`.motto`).toggleClass("hide");
+      $(`.motto`).css("display", "block");
 
       for (let i = 0; i < displayArray.length; i++) {
         let classCrossed = displayArray[i].brotherClass;
@@ -76,7 +76,7 @@ $(document).ready(function () {
         let status = displayArray[i].brotherStatus;
         let link = displayArray[i].brotherLinkedIn;
 
-        $(`#brother-box${[i]}`).toggleClass("hide");
+        $(`#brother-box${[i]}`).css("display", "block");
         $(`#brotherImg${[i]}`).attr("src", img);
         $(`#brotherImg${[i]}`).attr("alt", name);
         $(`#brotherName${[i]}`).text(name);
@@ -105,9 +105,9 @@ $(document).ready(function () {
   $(`.btn-uji`).on("click", function () {
     
     // After click, clears current display and shows loading spin.
-    $(`.brother-box`).toggleClass("hide");
-    $(`.motto`).toggleClass("hide");
-    $(`.spinner-border`).toggleClass("hide");
+    $(`.brother-box`).css("display", "none");
+    $(`.motto`).css("display", "none");
+    $(`.spinner-border`).css("display", "block");
 
     // The button text must match exactly to the array of brother objects. "John Do" button matches "John Do" in brotherUji.
     let btnValue = $(this)[0].innerText;
@@ -117,7 +117,7 @@ $(document).ready(function () {
     // Timer to remove the loading spin.
     setTimeout(hideLoader, 1000);
     function hideLoader() {
-      $(`.spinner-border`).toggleClass("hide");
+      $(`.spinner-border`).css("display", "none");
     }
 
     // Pushing the uji into a new array so it will match card ID's
@@ -154,7 +154,7 @@ $(document).ready(function () {
       function displayCards() {
         $(`#brotherTitle`).text(displayArray[0].brotherUji + " Uji");
         $(`#classMotto`).text("");
-        $(`.motto`).toggleClass("hide");
+        $(`.motto`).css("display", "block");
         for (let i = 0; i < displayArray.length; i++) {
           let classCrossed = displayArray[i].brotherClass;
           let img = displayArray[i].brotherImg;
@@ -167,7 +167,7 @@ $(document).ready(function () {
           let status = displayArray[i].brotherStatus;
           let link = displayArray[i].brotherLinkedIn;
 
-          $(`#brother-box${[i]}`).toggleClass("hide");
+          $(`#brother-box${[i]}`).css("display", "block");
           $(`#brotherImg${[i]}`).attr("src", img);
           $(`#brotherImg${[i]}`).attr("alt", name);
           $(`#brotherName${[i]}`).text(name);
