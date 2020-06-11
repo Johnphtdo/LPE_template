@@ -122,6 +122,9 @@ body {
 .u-justify-text {
   text-align: justify; }
 
+.hide {
+  display: none; }
+
 .btn_secondary {
   background-color: #f58025;
   color: #ffffff;
@@ -477,9 +480,6 @@ body {
       .classes__item:not(:last-child) {
         margin-right: 0; } }
 
-.spinner-border {
-  display: none; }
-
 .section-brothers {
   padding: 5rem 0;
   margin: 5vh 0; }
@@ -513,12 +513,6 @@ body {
     margin-bottom: .5rem; }
   .brother-box__link {
     font-size: 3rem; }
-
-.motto {
-  display: none; }
-
-.brother-box {
-  display: none; }
 
 .section-events {
   padding: 10rem 0;
