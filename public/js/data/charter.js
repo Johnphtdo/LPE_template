@@ -135,7 +135,7 @@ export const charterData = [
 
 export const charterInfo = {
   id: "Charter",
-  motto: "The key to immortality is first living a life worth remembering",
+  motto: "The Key to Immortality is First Living a Life Worth Remembering",
 };
 
 // {
