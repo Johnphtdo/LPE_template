@@ -192,7 +192,7 @@ export const alphaData = [
     brotherUji: "Joe Tran",
   },
 ];
-export const alphaMotto = {
+export const alphaInfo = {
   id: "Alpha",
   motto: "Individually Unique, Together Complete",
 };

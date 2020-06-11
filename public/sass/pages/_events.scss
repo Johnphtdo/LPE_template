@@ -8,7 +8,20 @@
           rgba($color-primary, 0.95)
         );        
     }
-  
+  .event-link{
+    color: $color-secondary;
+  &:link,
+  &:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+
+  &:hover,
+  &:active {
+    color: $color-primary;
+  }
+  }
     .event-box {
       @include card;
   

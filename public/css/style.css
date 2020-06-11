@@ -537,6 +537,15 @@ body {
   margin: -10vh 0;
   background-image: linear-gradient(to bottom, rgba(32, 48, 99, 0.3), rgba(32, 48, 99, 0.95)); }
 
+.event-link {
+  color: #f58025; }
+  .event-link:link, .event-link:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block; }
+  .event-link:hover, .event-link:active {
+    color: #203063; }
+
 .event-box {
   background-color: rgba(245, 128, 37, 0.8);
   text-align: center;
@@ -559,14 +568,14 @@ body {
 .card {
   background-color: #f58025; }
 
-.contact-link:link, .contact-link:visited {
-  color: #000000;
-  text-decoration: none;
-  text-transform: uppercase;
-  display: inline-block; }
-
-.contact-link:hover, .contact-link:active {
-  color: #203063; }
+.contact-link {
+  color: #f58025; }
+  .contact-link:link, .contact-link:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block; }
+  .contact-link:hover, .contact-link:active {
+    color: #203063; }
 
 .btn-link {
   margin: 0;
@@ -586,3 +595,4 @@ body {
     .section-recruitment {
       background-image: none; } }
 
+/* Website Responsiveness */

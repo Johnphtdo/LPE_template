@@ -1,4 +1,4 @@
-import { brotherData, brotherMotto } from "./data/brotherData.js";
+import { brotherData, classInfo } from "./data/brotherData.js";
 
 $(document).ready(function () {
   $(`.btn-class`).on("click", function () {
@@ -45,14 +45,15 @@ $(document).ready(function () {
     }
 
     // console.log(displayArray)
-    // console.log(brotherMotto);
+    // console.log(classInfo);
 
     setTimeout(displayCards, 1000);
     function displayCards() {
       let motto = "";
-      for (let i = 0; i < brotherMotto.length; i++) {
-        if (brotherMotto[i].id == btnValue) {
-          motto = brotherMotto[i].motto;
+      let backgroundImg = "";
+      for (let i = 0; i < classInfo.length; i++) {
+        if (classInfo[i].id == btnValue) {
+          motto = classInfo[i].motto;
         }
         $(`#brotherTitle`).text(displayArray[0].brotherClass + " Class");
         $(`#classMotto`).text(motto);

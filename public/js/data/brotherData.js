@@ -1,7 +1,7 @@
-import {charterData, charterMotto} from './charter.js'
-import {alphaData, alphaMotto} from './alpha.js'
+import {charterData, charterInfo} from './charter.js'
+import {alphaData, alphaInfo} from './alpha.js'
 
 export const brotherData = [...charterData, ...alphaData];
 
-export const brotherMotto = [charterMotto, alphaMotto];   
+export const classInfo = [charterInfo, alphaInfo];   
     

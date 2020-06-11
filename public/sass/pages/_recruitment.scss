@@ -3,9 +3,9 @@
 }
 
 .contact-link {
+  color: $color-secondary;
   &:link,
   &:visited {
-    color: $color-black;
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
