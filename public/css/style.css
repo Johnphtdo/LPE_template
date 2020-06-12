@@ -322,6 +322,9 @@ body {
     font-weight: 700;
     width: 100%;
     transition: .2s all ease; }
+    @media only screen and (max-width: 37.5em) {
+      .nav__link, .nav__link:link, .nav__link:visited {
+        font-size: 1.5rem; } }
   .nav__link:hover, .nav__link:link:hover, .nav__link:visited:hover {
     color: #000000; }
 

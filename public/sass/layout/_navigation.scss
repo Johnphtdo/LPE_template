@@ -25,6 +25,10 @@
         font-weight: 700;
         width: 100%;
         transition: .2s all ease;
+
+        @include respond (phone){
+            font-size: $small-font-size;
+        }
       }
       
       &__link:hover,
