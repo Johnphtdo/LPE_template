@@ -191,3 +191,20 @@ $(document).ready(function () {
     // console.log(btnValue);
   });
 });
+
+var a = $(".navigation").offset().top;
+
+function scrollListener(){
+    if($(document).scrollTop() > a)
+    {   
+      $(".navigation").css("display", "block");
+      
+    } else {
+      $(".navigation").css("display", "none");
+
+    }
+};
+
+$(document).scroll(scrollListener);
+
+scrollListener();

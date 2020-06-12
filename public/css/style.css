@@ -302,6 +302,29 @@ body {
   background-size: cover;
   background-position: center; }
 
+.nav {
+  background-color: #f58025; }
+  @media only screen and (max-width: 56.25em) {
+    .nav {
+      padding: 0 0; } }
+  .nav__list {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  .nav__list-item {
+    padding: 1.2rem 0; }
+  .nav__link, .nav__link:link, .nav__link:visited {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    width: 100%;
+    transition: .2s all ease; }
+  .nav__link:hover, .nav__link:link:hover, .nav__link:visited:hover {
+    color: #000000; }
+
 .navigation__checkbox {
   display: none; }
 

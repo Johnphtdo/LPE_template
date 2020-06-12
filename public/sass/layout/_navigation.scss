@@ -1,3 +1,41 @@
+.nav {
+    background-color: $color-secondary;
+    @include respond(tab-port) {
+        padding: 0 0;
+    }
+    &__list {
+        width: 100%;
+        list-style-type: none;
+      
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      
+      &__list-item {
+        padding: 1.2rem 0;
+      }
+      
+      &__link,
+      &__link:link,
+      &__link:visited {
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: $default-font-size;
+        font-weight: 700;
+        width: 100%;
+        transition: .2s all ease;
+      }
+      
+      &__link:hover,
+      &__link:link:hover,
+      &__link:visited:hover {
+        color: $color-black;
+      }
+  }
+  
+  
+
 .navigation {
 
  &__checkbox{
