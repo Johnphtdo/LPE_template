@@ -39,9 +39,13 @@
   
 .heading-secondary {
   text-shadow: $default-shadow;
-
+  font-size: $default-font-size;
   margin-bottom: 1%;
   display: inline-block;
+  @include respond(phone){
+    font-size: $small-font-size;
+    padding: 1rem;
+  }
   
   &--main{
     font-weight: 400;
@@ -52,9 +56,10 @@
       
   &--sub{
         font-weight: 700;
-        font-size: $default-font-size;
         display:block;
+        
       }
+  
 }
 
 .about-us{
@@ -71,13 +76,33 @@
         max-width: 90%;
         font-size: $default-font-size
       }
+      @include respond(phone){
+        font-size: $small-font-size;
+      }
 }
 .about-recruitment{
   font-size: $default-font-size;
   text-shadow: $default-shadow;
   margin: 2rem auto;
+  @include respond(tab-port){
+    padding: 2rem;
+  }
+  @include respond(phone){
+    font-size: $small-font-size;
+  }
 }
 .accordion {
   font-size: $default-font-size;
   margin: 2rem auto;
+
+  .card-header{
+  @include respond(tab-port){
+    padding: 2rem;
+  }
+}
+  .card-body{
+    @include respond(tab-port){
+      padding: 2rem;
+    }
+  }
 }

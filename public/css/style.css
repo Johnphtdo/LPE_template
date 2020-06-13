@@ -78,8 +78,13 @@ body {
 
 .heading-secondary {
   text-shadow: 0.2rem 0.2rem #000000;
+  font-size: 2rem;
   margin-bottom: 1%;
   display: inline-block; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 1.5rem;
+      padding: 1rem; } }
   .heading-secondary--main {
     font-weight: 400;
     font-size: 4rem;
@@ -87,7 +92,6 @@ body {
     margin-bottom: 1%; }
   .heading-secondary--sub {
     font-weight: 700;
-    font-size: 2rem;
     display: block; }
 
 .about-us {
@@ -103,18 +107,37 @@ body {
     .about-us {
       max-width: 90%;
       font-size: 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .about-us {
+      font-size: 1.5rem; } }
 
 .about-recruitment {
   font-size: 2rem;
   text-shadow: 0.2rem 0.2rem #000000;
   margin: 2rem auto; }
+  @media only screen and (max-width: 56.25em) {
+    .about-recruitment {
+      padding: 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .about-recruitment {
+      font-size: 1.5rem; } }
 
 .accordion {
   font-size: 2rem;
   margin: 2rem auto; }
+  @media only screen and (max-width: 56.25em) {
+    .accordion .card-header {
+      padding: 2rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .accordion .card-body {
+      padding: 2rem; } }
 
 .u-center-text {
   text-align: center; }
+
+@media only screen and (max-width: 56.25em) {
+  .u-center-textR {
+    text-align: center; } }
 
 .u-margin-bottom-4 {
   margin-bottom: 4rem; }

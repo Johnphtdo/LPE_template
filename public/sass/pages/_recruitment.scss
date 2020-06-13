@@ -39,6 +39,7 @@
   url(../img/recruitment.jpg);
   background-size: cover;
   background-position: center;
+  
   @include respond(tab-port){
     background-image: none;
   }
