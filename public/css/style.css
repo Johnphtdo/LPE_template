@@ -131,6 +131,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .accordion .card-body {
       padding: 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .accordion .card-body {
+      font-size: 1.5rem; } }
 
 .u-center-text {
   text-align: center; }

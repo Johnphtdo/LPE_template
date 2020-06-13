@@ -104,5 +104,8 @@
     @include respond(tab-port){
       padding: 2rem;
     }
+    @include respond(phone){
+      font-size: $small-font-size;
+    }
   }
 }
